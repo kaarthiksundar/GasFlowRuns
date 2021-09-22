@@ -25,3 +25,6 @@ Manifest.toml
 
 *.DS_Store
 
+# data 
+data/US-ouo-benchmarks
+
