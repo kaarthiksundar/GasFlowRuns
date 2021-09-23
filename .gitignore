@@ -25,7 +25,9 @@ Manifest.toml
 
 *.DS_Store
 
-# data 
+# data and src
 data/US-ouo-benchmarks
 data/US-open-benchmarks
+data/NAERM-benchmarks
+src/matgas
 

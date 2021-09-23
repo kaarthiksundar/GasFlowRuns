@@ -751,5 +751,6 @@
       "comp_name": "c3",
       "from_node": 19
     }
-  }
+  },
+  "control_valves": {}
 }

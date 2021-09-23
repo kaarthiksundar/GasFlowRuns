@@ -11,16 +11,17 @@ get_simulation_params(; T::Float64 = 288.70599999999996) =
 )
 
 
-function generate_steady_sim_inputs_from_gaslib(file::AbstractString, output_folder::AbstractString)
+function generate_steady_sim_inputs_from_gaslib(file::AbstractString, 
+    input_folder::AbstractString, output_folder::AbstractString)
 
-    data = parse_file("GasLib-benchmarks/" * file)
+    data = parse_file(input_folder * file)
 
     (!isdir(output_folder)) && (mkdir(output_folder)) 
 
     network_data = Dict{String,Any}(
         "nodes" => Dict{String,Any}(), 
         "pipes" => Dict{String,Any}(), 
-        "compressors" => Dict{String,Any}()
+        "compressors" => Dict{String,Any}(),
     )
 
     bc = Dict{String,Any}(
@@ -64,7 +65,9 @@ function generate_steady_sim_inputs_from_gaslib(file::AbstractString, output_fol
             bc["boundary_pslack"][i] = 5000000
         else 
             network_data["nodes"][i]["slack_bool"] = 0
-            bc["boundary_nonslack_flow"][i] = withdrawal[i]
+            if !(withdrawal[i] == 0)
+                bc["boundary_nonslack_flow"][i] = withdrawal[i]
+            end
         end
     end
 
@@ -92,6 +95,23 @@ function generate_steady_sim_inputs_from_gaslib(file::AbstractString, output_fol
         )
     end 
 
+    if haskey(data, "regulator") 
+        network_data["control_valves"] = Dict{String,Any}() 
+        bc["boundary_control_valve"] = Dict{String,Any}()
+        for (i, cv) in data["regulator"]
+            network_data["control_valves"][i] = Dict{String,Any}(
+            "cv_id" => parse(Int, i),
+            "cv_name" => "cv" * i,
+            "from_node" => cv["fr_junction"],
+            "to_node" => cv["to_junction"]
+        )
+        bc["boundary_control_valve"][i] = Dict{String,Any}(
+            "control_type" => 0, "value" => 1.0
+        )
+        end 
+
+    end 
+
     open(output_folder * "params.json", "w") do f 
         JSON.print(f, Dict("simulation_params" => get_simulation_params()), 2)
     end
@@ -106,5 +126,9 @@ function generate_steady_sim_inputs_from_gaslib(file::AbstractString, output_fol
 
 end 
 
-generate_steady_sim_inputs_from_gaslib("GasLib-40.zip", "GasLib-40/")
-generate_steady_sim_inputs_from_gaslib("GasLib-135.zip", "GasLib-135/")
+generate_steady_sim_inputs_from_gaslib("GasLib-24.zip", 
+    "./data/GasLib-benchmarks/", "./data/GasLib-24/")
+generate_steady_sim_inputs_from_gaslib("GasLib-40.zip", 
+    "./data/GasLib-benchmarks/", "./data/GasLib-40/")
+generate_steady_sim_inputs_from_gaslib("GasLib-135.zip", 
+    "./data/GasLib-benchmarks/", "./data/GasLib-135/")
