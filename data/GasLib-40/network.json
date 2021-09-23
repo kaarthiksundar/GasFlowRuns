@@ -361,6 +361,8 @@
       "node_name": "n3"
     }
   },
+  "short_pipes": {},
+  "valves": {},
   "pipes": {
     "32": {
       "length": 65057.174267899994,
@@ -714,6 +716,8 @@
       "from_node": 18
     }
   },
+  "resistors": {},
+  "loss_resistors": {},
   "compressors": {
     "4": {
       "comp_id": 4,

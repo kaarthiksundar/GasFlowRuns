@@ -1,4 +1,8 @@
 {
+  "boundary_valve": {
+    "off": [],
+    "on": []
+  },
   "boundary_pslack": {
     "17": 5000000
   },
@@ -26,9 +30,13 @@
     "18": -29.906319444444442
   },
   "boundary_control_valve": {
+    "off": [],
     "1": {
       "control_type": 0,
       "value": 1.0
-    }
+    },
+    "on": [
+      1
+    ]
   }
 }

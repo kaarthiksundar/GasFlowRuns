@@ -217,6 +217,15 @@
       "node_name": "n3"
     }
   },
+  "short_pipes": {
+    "1": {
+      "short_pipe_id": 1,
+      "to_node": 1,
+      "short_pipe_name": "sp1",
+      "from_node": 18
+    }
+  },
+  "valves": {},
   "pipes": {
     "4": {
       "length": 30000.0,
@@ -390,6 +399,17 @@
       "from_node": 3
     }
   },
+  "resistors": {
+    "1": {
+      "resistor_name": "r1",
+      "drag": 5.40999984741211,
+      "to_node": 1,
+      "resistor_id": 1,
+      "diameter": 0.9,
+      "from_node": 12
+    }
+  },
+  "loss_resistors": {},
   "compressors": {
     "1": {
       "comp_id": 1,
@@ -412,9 +432,9 @@
   },
   "control_valves": {
     "1": {
+      "control_valve_name": "cv1",
       "to_node": 14,
-      "cv_id": 1,
-      "cv_name": "cv1",
+      "control_valve_id": 1,
       "from_node": 13
     }
   }

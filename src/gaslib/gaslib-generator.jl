@@ -95,21 +95,64 @@ function generate_steady_sim_inputs_from_gaslib(file::AbstractString,
         )
     end 
 
-    if haskey(data, "regulator") 
-        network_data["control_valves"] = Dict{String,Any}() 
-        bc["boundary_control_valve"] = Dict{String,Any}()
-        for (i, cv) in data["regulator"]
-            network_data["control_valves"][i] = Dict{String,Any}(
-            "cv_id" => parse(Int, i),
-            "cv_name" => "cv" * i,
-            "from_node" => cv["fr_junction"],
-            "to_node" => cv["to_junction"]
+    network_data["control_valves"] = Dict{String,Any}() 
+    bc["boundary_control_valve"] = Dict{String,Any}("on" => [], "off" => [])
+    for (i, cv) in data["regulator"]
+        network_data["control_valves"][i] = Dict{String,Any}(
+        "control_valve_id" => parse(Int, i),
+        "control_valve_name" => "cv" * i,
+        "from_node" => cv["fr_junction"],
+        "to_node" => cv["to_junction"]
         )
+        push!(bc["boundary_control_valve"]["on"], parse(Int, i))
         bc["boundary_control_valve"][i] = Dict{String,Any}(
             "control_type" => 0, "value" => 1.0
         )
-        end 
+    end 
 
+    network_data["valves"] = Dict{String,Any}() 
+    bc["boundary_valve"] = Dict{String,Any}("on" => [], "off" => [])
+    for (i, v) in data["valve"]
+        network_data["valves"][i] = Dict{String,Any}(
+            "valve_id" => parse(Int, i),
+            "valve_name" => "v" * i,
+            "from_node" => v["fr_junction"],
+            "to_node" => v["to_junction"]
+        )
+        push!(bc["boundary_valve"]["on"], parse(Int, i))
+    end 
+
+    network_data["resistors"] = Dict{String,Any}()
+    network_data["loss_resistors"] = Dict{String,Any}()
+    network_data["short_pipes"] = Dict{String,Any}()
+    for (i, res) in data["resistor"]
+        network_data["resistors"][i] = Dict{String,Any}(
+            "resistor_id" => parse(Int, i),
+            "resistor_name" => "r" * i, 
+            "from_node" => res["fr_junction"], 
+            "to_node" => res["to_junction"], 
+            "drag" => res["drag"], 
+            "diameter" => res["diameter"]
+        )
+    end 
+
+    for (i, res) in data["loss_resistor"]
+        network_data["loss_resistors"][i] = Dict{String,Any}(
+            "loss_resistor_id" => parse(Int, i),
+            "loss_resistor_name" => "lr" * i, 
+            "from_node" => res["fr_junction"], 
+            "to_node" => res["to_junction"], 
+            "p_loss" => res["p_loss"] * data["base_pressure"]
+        )
+    end 
+
+    for (i, pipe) in data["short_pipe"]
+        network_data["short_pipes"][i] = Dict{String,Any}(
+            "short_pipe_id" => parse(Int, i),
+            "short_pipe_name" => "sp" * i,
+            "from_node" => pipe["fr_junction"],
+            "to_node" => pipe["to_junction"]
+        )
     end 
 
     open(output_folder * "params.json", "w") do f 
@@ -126,9 +169,17 @@ function generate_steady_sim_inputs_from_gaslib(file::AbstractString,
 
 end 
 
+generate_steady_sim_inputs_from_gaslib("GasLib-11.zip", 
+    "./data/GasLib-benchmarks/", "./data/GasLib-11/")
 generate_steady_sim_inputs_from_gaslib("GasLib-24.zip", 
     "./data/GasLib-benchmarks/", "./data/GasLib-24/")
 generate_steady_sim_inputs_from_gaslib("GasLib-40.zip", 
     "./data/GasLib-benchmarks/", "./data/GasLib-40/")
+generate_steady_sim_inputs_from_gaslib("GasLib-134.zip", 
+    "./data/GasLib-benchmarks/", "./data/GasLib-134/")
 generate_steady_sim_inputs_from_gaslib("GasLib-135.zip", 
     "./data/GasLib-benchmarks/", "./data/GasLib-135/")
+generate_steady_sim_inputs_from_gaslib("GasLib-582.zip", 
+    "./data/GasLib-benchmarks/", "./data/GasLib-582/")
+generate_steady_sim_inputs_from_gaslib("GasLib-4197.zip", 
+    "./data/GasLib-benchmarks/", "./data/GasLib-4197/")
