@@ -2270,6 +2270,7 @@
     "1": {
       "control_valve_name": "cv1",
       "to_node": 63,
+      "bypass_required": 0,
       "control_valve_id": 1,
       "from_node": 62
     }

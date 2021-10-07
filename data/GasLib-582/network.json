@@ -9620,138 +9620,161 @@
     "4": {
       "control_valve_name": "cv4",
       "to_node": 303,
+      "bypass_required": 1,
       "control_valve_id": 4,
       "from_node": 304
     },
     "1": {
       "control_valve_name": "cv1",
       "to_node": 340,
+      "bypass_required": 0,
       "control_valve_id": 1,
       "from_node": 401
     },
     "12": {
       "control_valve_name": "cv12",
       "to_node": 223,
+      "bypass_required": 0,
       "control_valve_id": 12,
       "from_node": 368
     },
     "20": {
       "control_valve_name": "cv20",
       "to_node": 343,
+      "bypass_required": 1,
       "control_valve_id": 20,
       "from_node": 374
     },
     "2": {
       "control_valve_name": "cv2",
       "to_node": 298,
+      "bypass_required": 1,
       "control_valve_id": 2,
       "from_node": 299
     },
     "6": {
       "control_valve_name": "cv6",
       "to_node": 306,
+      "bypass_required": 1,
       "control_valve_id": 6,
       "from_node": 307
     },
     "23": {
       "control_valve_name": "cv23",
       "to_node": 297,
+      "bypass_required": 1,
       "control_valve_id": 23,
       "from_node": 256
     },
     "22": {
       "control_valve_name": "cv22",
       "to_node": 296,
+      "bypass_required": 1,
       "control_valve_id": 22,
       "from_node": 377
     },
     "11": {
       "control_valve_name": "cv11",
       "to_node": 315,
+      "bypass_required": 1,
       "control_valve_id": 11,
       "from_node": 317
     },
     "13": {
       "control_valve_name": "cv13",
       "to_node": 319,
+      "bypass_required": 1,
       "control_valve_id": 13,
       "from_node": 320
     },
     "5": {
       "control_valve_name": "cv5",
       "to_node": 290,
+      "bypass_required": 1,
       "control_valve_id": 5,
       "from_node": 305
     },
     "15": {
       "control_valve_name": "cv15",
       "to_node": 342,
+      "bypass_required": 1,
       "control_valve_id": 15,
       "from_node": 341
     },
     "16": {
       "control_valve_name": "cv16",
       "to_node": 345,
+      "bypass_required": 1,
       "control_valve_id": 16,
       "from_node": 344
     },
     "14": {
       "control_valve_name": "cv14",
       "to_node": 353,
+      "bypass_required": 1,
       "control_valve_id": 14,
       "from_node": 356
     },
     "21": {
       "control_valve_name": "cv21",
       "to_node": 281,
+      "bypass_required": 1,
       "control_valve_id": 21,
       "from_node": 90
     },
     "7": {
       "control_valve_name": "cv7",
       "to_node": 405,
+      "bypass_required": 1,
       "control_valve_id": 7,
       "from_node": 308
     },
     "8": {
       "control_valve_name": "cv8",
       "to_node": 309,
+      "bypass_required": 1,
       "control_valve_id": 8,
       "from_node": 310
     },
     "17": {
       "control_valve_name": "cv17",
       "to_node": 179,
+      "bypass_required": 1,
       "control_valve_id": 17,
       "from_node": 190
     },
     "10": {
       "control_valve_name": "cv10",
       "to_node": 315,
+      "bypass_required": 1,
       "control_valve_id": 10,
       "from_node": 212
     },
     "19": {
       "control_valve_name": "cv19",
       "to_node": 339,
+      "bypass_required": 1,
       "control_valve_id": 19,
       "from_node": 371
     },
     "18": {
       "control_valve_name": "cv18",
       "to_node": 235,
+      "bypass_required": 1,
       "control_valve_id": 18,
       "from_node": 363
     },
     "9": {
       "control_valve_name": "cv9",
       "to_node": 311,
+      "bypass_required": 1,
       "control_valve_id": 9,
       "from_node": 313
     },
     "3": {
       "control_valve_name": "cv3",
       "to_node": 300,
+      "bypass_required": 1,
       "control_valve_id": 3,
       "from_node": 302
     }

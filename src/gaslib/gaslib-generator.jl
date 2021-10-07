@@ -12,7 +12,8 @@ get_simulation_params(; T::Float64 = 288.70599999999996) =
 
 
 function generate_steady_sim_inputs_from_gaslib(file::AbstractString, 
-    input_folder::AbstractString, output_folder::AbstractString)
+    input_folder::AbstractString, output_folder::AbstractString;
+    compressor_ratio::Float64 = 1.5, control_valve_ratio::Float64 = 1.0)
 
     data = parse_file(input_folder * file)
 
@@ -91,7 +92,7 @@ function generate_steady_sim_inputs_from_gaslib(file::AbstractString,
             "to_node" => compressor["to_junction"]
         )
         bc["boundary_compressor"][i] = Dict{String,Any}(
-            "control_type" => 0, "value" => 1.5
+            "control_type" => 0, "value" => compressor_ratio
         )
     end 
 
@@ -102,11 +103,12 @@ function generate_steady_sim_inputs_from_gaslib(file::AbstractString,
         "control_valve_id" => parse(Int, i),
         "control_valve_name" => "cv" * i,
         "from_node" => cv["fr_junction"],
-        "to_node" => cv["to_junction"]
+        "to_node" => cv["to_junction"],
+        "bypass_required" => cv["bypass_required"]
         )
         push!(bc["boundary_control_valve"]["on"], parse(Int, i))
         bc["boundary_control_valve"][i] = Dict{String,Any}(
-            "control_type" => 0, "value" => 1.0
+            "control_type" => 0, "value" => control_valve_ratio
         )
     end 
 
@@ -180,6 +182,8 @@ generate_steady_sim_inputs_from_gaslib("GasLib-134.zip",
 generate_steady_sim_inputs_from_gaslib("GasLib-135.zip", 
     "./data/GasLib-benchmarks/", "./data/GasLib-135/")
 generate_steady_sim_inputs_from_gaslib("GasLib-582.zip", 
-    "./data/GasLib-benchmarks/", "./data/GasLib-582/")
+    "./data/GasLib-benchmarks/", "./data/GasLib-582/";
+    compressor_ratio = 1.0, control_valve_ratio = 1.0)
 generate_steady_sim_inputs_from_gaslib("GasLib-4197.zip", 
-    "./data/GasLib-benchmarks/", "./data/GasLib-4197/")
+    "./data/GasLib-benchmarks/", "./data/GasLib-4197/";
+    compressor_ratio = 1.0, control_valve_ratio = 1.0)

@@ -24,6 +24,8 @@ docs/site/
 Manifest.toml
 
 *.DS_Store
+*.lp 
+*.log
 
 # data and src
 data/US-ouo-benchmarks
