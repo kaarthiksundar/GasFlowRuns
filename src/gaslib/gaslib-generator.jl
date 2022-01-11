@@ -181,9 +181,3 @@ generate_steady_sim_inputs_from_gaslib("GasLib-134.zip",
     "./data/GasLib-benchmarks/", "./data/GasLib-134/")
 generate_steady_sim_inputs_from_gaslib("GasLib-135.zip", 
     "./data/GasLib-benchmarks/", "./data/GasLib-135/")
-generate_steady_sim_inputs_from_gaslib("GasLib-582.zip", 
-    "./data/GasLib-benchmarks/", "./data/GasLib-582/";
-    compressor_ratio = 1.0, control_valve_ratio = 1.0)
-generate_steady_sim_inputs_from_gaslib("GasLib-4197.zip", 
-    "./data/GasLib-benchmarks/", "./data/GasLib-4197/";
-    compressor_ratio = 1.0, control_valve_ratio = 1.0)
