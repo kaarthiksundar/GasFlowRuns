@@ -3,7 +3,6 @@ using Distributions
 using DelimitedFiles
 using Random 
 
-Random.seed!(2022)
 
 function run_gf_solver(data::Dict{String,Any}, eos::Symbol; kwargs...)
     ss = initialize_simulator(data, eos=eos)
@@ -50,7 +49,7 @@ function paper_runs(folder::AbstractString, eos::Symbol; num_runs = 500,
     data_sample = GasSteadySim._parse_data(folder)
     # julia compiling run 
     solver_return = run_gf_solver(data_sample, eos, method = :newton, show_trace = true)
-
+    Random.seed!(2022)
     results = Dict{Int,Any}()
 
     for i in 1:num_runs
