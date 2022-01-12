@@ -26,7 +26,7 @@
             "from_node": 1,
             "to_node": 2,
             "diameter": 0.9144,
-            "length": 500,
+            "length": 20000,
             "friction_factor": 0.01
         }
     }
