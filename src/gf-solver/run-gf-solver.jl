@@ -12,7 +12,7 @@ end
 
 function perturb_compressor_ratios!(data::Dict{String,Any})
     for (_, compressor) in get(data, "boundary_compressor", [])
-        compressor["value"] = rand(Uniform(1.1, 1.5))
+        compressor["value"] = rand(Uniform(1.1, 1.4))
     end 
 end 
 

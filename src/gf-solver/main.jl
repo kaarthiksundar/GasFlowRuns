@@ -2,7 +2,7 @@ include("run-gf-solver.jl")
 
 using Logging
 
-logger = SimpleLogger(stdout, Logging.Warn)
+logger = ConsoleLogger(stdout, Logging.Error)
 
 eos_list = [:ideal, :full_cnga]
 cases = ["8-node", "GasLib-11", "GasLib-24", 
