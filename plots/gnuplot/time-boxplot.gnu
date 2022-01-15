@@ -1,4 +1,4 @@
-set terminal cairolatex standalone pdf dashed transparent size 3, 3 \
+set terminal cairolatex standalone pdf dashed transparent size 3.2, 3 \
 header \
 '\usepackage{mathpazo,amssymb,bm}\usepackage{xcolor}\definecolor{blue}{RGB}{0,114,178}\definecolor{red}{RGB}{213,94,0}\definecolor{yellow}{RGB}{240,228,66} \definecolor{green}{RGB}{0,158,115}\newcommand{\hl}[1]{\setlength{\fboxsep}{0.75pt}\colorbox{white}{#1}}\usepackage[fontsize=9pt]{fontsize}'
 
