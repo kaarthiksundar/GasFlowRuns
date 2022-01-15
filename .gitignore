@@ -32,4 +32,7 @@ data/US-ouo-benchmarks
 data/US-open-benchmarks
 data/NAERM-benchmarks
 src/matgas
-
+*.aux 
+*.log 
+*-inc.pdf
+*.fls 
