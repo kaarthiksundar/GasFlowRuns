@@ -7,6 +7,9 @@ using Random
 function run_gf_solver(data::Dict{String,Any}, eos::Symbol; kwargs...)
     ss = initialize_simulator(data, eos=eos)
     solver_return = run_simulator!(ss; kwargs...)
+    if Int(solver_return.status) == 4
+        @show ss.sol["compressor_flow"][1] # this compressor is not in cycle
+    end
     return solver_return
 end 
 
@@ -18,7 +21,7 @@ end
 
 function perturb_injections!(data::Dict{String,Any})
     for (i, nonslack_flow) in get(data, "boundary_nonslack_flow", [])
-        scaling = rand(Uniform(0.9, 1.1))
+        scaling = rand(Uniform(0.75, 1.25))
         data["boundary_nonslack_flow"][i] = scaling * nonslack_flow
     end 
 end 

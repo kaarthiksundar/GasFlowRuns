@@ -1,6 +1,6 @@
 set terminal cairolatex standalone pdf dashed transparent size 3.2, 3 \
 header \
-'\usepackage{mathpazo,amssymb,bm}\usepackage{xcolor}\definecolor{blue}{RGB}{0,114,178}\definecolor{red}{RGB}{213,94,0}\definecolor{yellow}{RGB}{240,228,66} \definecolor{green}{RGB}{0,158,115}\newcommand{\hl}[1]{\setlength{\fboxsep}{0.75pt}\colorbox{white}{#1}}\usepackage[fontsize=9pt]{fontsize}'
+'\usepackage[scaled]{helvet}\usepackage[T1]{fontenc}\renewcommand\familydefault{\sfdefault}\usepackage{amssymb,bm}\usepackage{xcolor}\definecolor{blue}{RGB}{0,114,178}\definecolor{red}{RGB}{213,94,0}\definecolor{yellow}{RGB}{240,228,66} \definecolor{green}{RGB}{0,158,115}\newcommand{\hl}[1]{\setlength{\fboxsep}{0.75pt}\colorbox{white}{#1}}\usepackage[fontsize=9pt]{fontsize}'
 
 output = '../tex/time-box.tex'
 
@@ -28,7 +28,7 @@ set key spacing 1.5
 set ylabel 'time (sec.)'
 set xrange [1.0:12.0]
 set xtics   ('11' 2.0, '24' 5.0, '40' 8.0, '134' 11.0)
-set xlabel 'GasLib instance'
+set xlabel 'GasLib network'
 set output output
 plot '../../output/GasLib-11-ideal.csv' using (1.5):7 ls 2 title 'ideal', \
 '../../output/GasLib-11-cnga.csv' using (2.5):7 ls 3 title 'non-ideal', \

@@ -1,5 +1,6 @@
 import pandas as pd 
 import csv 
+import math
 
 eos = ['ideal', 'cnga']
 instances = ['GasLib-11', 'GasLib-24', 'GasLib-40', 'GasLib-134']
@@ -53,7 +54,7 @@ def create_iter_table(instances, output_path):
         for instance in instances: 
             file_ideal = output_path + instance + '-ideal.csv'
             file_cnga = output_path + instance + '-cnga.csv'
-            data = [instance, '%.2f' % get_mean_iter(file_ideal), '%.2f' % get_mean_iter(file_cnga)]
+            data = [instance, math.ceil(get_mean_iter(file_ideal)), math.ceil(get_mean_iter(file_cnga))]
             writer.writerow(data)
     return 
 
