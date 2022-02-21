@@ -28,6 +28,7 @@ set arrow to 0,1 as 1
 set label '$0$'  at 0.05,-0.08
 set label '$p$'  at 0.9,-0.08
 set label '$\Pi(p)$' at 0.05,0.9
+set label '\textcolor{blue}{$-1.5\cdot b_1/b_2$}' at -1,-0.08
 set label '\textcolor{red}{Ideal}' at -0.4, 0.25 front
 set label '\textcolor{blue}{CNGA}' at -1.2, -0.5 front
 unset xlabel
@@ -41,6 +42,7 @@ plot [-1.5:1.0] NaN notitle, \
 [0.0:1.0] g(x) notitle ls 3 lw 4, \
 [-1.5:0] f(x) notitle ls 2 lw 4 dt '-', \
 [-1:0] g(x) notitle ls 3 lw 4 dt '-', \
-[-1.5:-1] g(x) notitle ls 3 lw 4
+[-1.5:-1] g(x) notitle ls 3 lw 4, \
+"<echo '-1 0'"  with points lc rgb '#0072B2' pointtype 7 pointsize 0.5 notitle 
 
 
