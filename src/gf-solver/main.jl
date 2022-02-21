@@ -35,9 +35,9 @@ end
 
 function run_kekatos_comparison_study()
     eos_list = [:ideal, :full_cnga]
-    cases = ["GasLib-40"] 
+    cases = ["GasLib-11", "GasLib-24", "GasLib-40", "GasLib-134"] 
 
-    output_folder = "./output/GasLib-40-comparison-study/"
+    output_folder = "./output/comparison-study/"
     data_folder = "./data/"
 
     num_runs = 500 
