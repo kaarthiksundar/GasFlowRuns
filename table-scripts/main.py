@@ -12,7 +12,7 @@ get_success_count = lambda file: (pd.read_csv(file)['solver_status'] == 0).sum()
 get_mean_iter = lambda file: pd.read_csv(file)['num_iterations'].mean() 
 
 def create_tables(instances, output_path):
-    create_pressure_correction_table(instances, output_path)
+    # create_pressure_correction_table(instances, output_path)
     create_dimensional_table(instances, output_path)
     create_iter_table(instances, output_path)
     return 

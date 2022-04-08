@@ -1,5 +1,5 @@
 instance,ideal_d,ideal_nd,nonideal_d,nonideal_nd
-GasLib-11,22,500,0,500
-GasLib-24,18,500,0,500
-GasLib-40,1,500,1,500
-GasLib-134,0,500,0,500
+GasLib-11,183,500,82,500
+GasLib-24,104,500,64,500
+GasLib-40,23,491,3,491
+GasLib-134,145,500,113,500

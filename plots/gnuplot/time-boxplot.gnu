@@ -30,11 +30,11 @@ set xrange [1.0:12.0]
 set xtics   ('11' 2.0, '24' 5.0, '40' 8.0, '134' 11.0)
 set xlabel 'GasLib network'
 set output output
-plot '../../output/GasLib-11-ideal.csv' using (1.5):7 ls 2 title 'ideal', \
-'../../output/GasLib-11-cnga.csv' using (2.5):7 ls 3 title 'non-ideal', \
-'../../output/GasLib-24-ideal.csv' using (4.5):7 ls 2 notitle, \
-'../../output/GasLib-24-cnga.csv' using (5.5):7 ls 3 notitle, \
-'../../output/GasLib-40-ideal.csv' using (7.5):7 ls 2 notitle, \
-'../../output/GasLib-40-cnga.csv' using (8.5):7 ls 3 notitle, \
-'../../output/GasLib-134-ideal.csv' using (10.5):7 ls 2 notitle, \
-'../../output/GasLib-134-cnga.csv' using (11.5):7 ls 3 notitle
+plot '../../output/GasLib-11-ideal.csv' using (1.5):6 ls 2 title 'ideal', \
+'../../output/GasLib-11-cnga.csv' using (2.5):6 ls 3 title 'non-ideal', \
+'../../output/GasLib-24-ideal.csv' using (4.5):6 ls 2 notitle, \
+'../../output/GasLib-24-cnga.csv' using (5.5):6 ls 3 notitle, \
+'../../output/GasLib-40-ideal.csv' using (7.5):6 ls 2 notitle, \
+'../../output/GasLib-40-cnga.csv' using (8.5):6 ls 3 notitle, \
+'../../output/GasLib-134-ideal.csv' using (10.5):6 ls 2 notitle, \
+'../../output/GasLib-134-cnga.csv' using (11.5):6 ls 3 notitle

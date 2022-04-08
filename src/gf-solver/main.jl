@@ -5,7 +5,7 @@ using Logging
 logger = ConsoleLogger(stdout, Logging.Error)
 
 function run_dim_vs_nondim_study()
-    eos_list = [:ideal]
+    eos_list = [:full_cnga]
     cases = ["GasLib-11", "GasLib-24", "GasLib-40", "GasLib-134"] 
 
     output_folder = "./output/"
