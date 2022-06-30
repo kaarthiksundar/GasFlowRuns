@@ -25,15 +25,23 @@ set xzeroaxis lc 'black' lt 1 lw 2
 set yzeroaxis lc 'black' lt 1 lw 2
 set arrow to 1,0 as 1
 set arrow to 0,1 as 1
-set label '$0$'  at 0.075,-0.08
+# set label '$0$'  at 0.075,-0.08
 set label '$p$'  at 0.85,-0.08
 set label '$\Pi(p)$' at 0.075,0.9
-set label '\textcolor{blue}{\footnotesize $p=\left(-\frac 32\right) r$}' at -1,-0.08
-set label '\textcolor{blue}{\footnotesize $p=-r$}' at -0.9,0.228
-set label '\textcolor{blue}{\footnotesize $p=\frac r2$}' at 0.05,0.228
+# set label '\textcolor{blue}{$p=\left(-3/2\right) r$}' at -1,-0.08
+# set label '\textcolor{blue}{$p=-r$}' at -0.9,0.228
+# set label '\textcolor{blue}{$p=r/2$}' at 0.05,0.3
+set label '\textcolor{blue}{A}' at -1,-0.08
+set label '\textcolor{blue}{B}' at -0.666,0.228
+set label '\textcolor{blue}{C}' at 0.075,-0.08
+set label '\textcolor{blue}{D}' at 0.28,0.228
 set label '\textcolor{red}{Ideal}' at -0.4, 0.25 front
 set label '\textcolor{blue}{CNGA}' at -1.2, -0.5 front
-set label '\textcolor{blue}{$r = \frac{b_1}{b_2}$}' at 0.5, -0.5 front
+set label '\textcolor{blue}{$p$ values at}' at 0.25, -0.2 front
+set label '\textcolor{blue}{A : $-3b_1/(2b_2)$}' at 0.2, -0.35 front
+set label '\textcolor{blue}{B : $-b_1/b_2$}' at 0.2, -0.5 front
+set label '\textcolor{blue}{C : $0$}' at 0.2, -0.65 front
+set label '\textcolor{blue}{D : $b_1/(2b_2)$}' at 0.2, -0.8 front
 unset xlabel
 unset ylabel
 
@@ -50,6 +58,7 @@ plot [-1.5:1.0] NaN notitle, \
 [-1.5:-0.6666] g(x) notitle ls 3 lw 4, \
 "<echo '-1 0'"  with points lc rgb '#0072B2' pointtype 7 pointsize 0.5 notitle, \
 "<echo '-0.6666 0.148'"  with points lc rgb '#0072B2' pointtype 7 pointsize 0.5 notitle, \
+"<echo '0 0'"  with points lc rgb '#0072B2' pointtype 7 pointsize 0.5 notitle, \
 "<echo '0.333 0.148'"  with points lc rgb '#0072B2' pointtype 7 pointsize 0.5 notitle
 
 
