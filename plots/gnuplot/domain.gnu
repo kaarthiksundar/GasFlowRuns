@@ -38,10 +38,10 @@ set label '\textcolor{blue}{D}' at 0.28,0.228
 set label '\textcolor{red}{Ideal}' at -0.4, 0.25 front
 set label '\textcolor{blue}{CNGA}' at -1.2, -0.5 front
 set label '\textcolor{blue}{$p$ values at}' at 0.25, -0.2 front
-set label '\textcolor{blue}{A : $-3b_1/(2b_2)$}' at 0.2, -0.35 front
-set label '\textcolor{blue}{B : $-b_1/b_2$}' at 0.2, -0.5 front
+set label '\textcolor{blue}{A : $-\frac 32 \cdot \frac{b_1}{b_2}$}' at 0.2, -0.35 front
+set label '\textcolor{blue}{B : $-\frac{b_1}{b_2}$}' at 0.2, -0.5 front
 set label '\textcolor{blue}{C : $0$}' at 0.2, -0.65 front
-set label '\textcolor{blue}{D : $b_1/(2b_2)$}' at 0.2, -0.8 front
+set label '\textcolor{blue}{D : $\frac 12 \cdot \frac{b_1}{b_2}$}' at 0.2, -0.8 front
 unset xlabel
 unset ylabel
 
