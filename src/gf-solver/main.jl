@@ -4,7 +4,7 @@ using Logging
 
 logger = ConsoleLogger(stdout, Logging.Error)
 
-function run_dim_vs_nondim_study()
+function run_dim_vs_nondim_study(lb_alpha::Float64=1.1, ub_alpha::Float64=1.4, lb_injection::Float64 = 0.75, ub_injection::Float64 = 1.25)
     eos_list = [:full_cnga]
     cases = ["GasLib-11", "GasLib-24", "GasLib-40", "GasLib-134"] 
 
@@ -24,7 +24,9 @@ function run_dim_vs_nondim_study()
                 else 
                     case * "-" * eos_string * ".csv" 
                 end 
-                paper_runs(folder::AbstractString, eos::Symbol; num_runs = num_runs, 
+                paper_runs(folder::AbstractString, eos::Symbol; lb_alpha=lb_alpha, ub_alpha=ub_alpha, 
+                    lb_injection=lb_injection, ub_injection=ub_injection,
+                     num_runs = num_runs, 
                     output_folder = output_folder, 
                     output_file = output_file, 
                     case_name = case, dimensional = dimensional) 
@@ -33,9 +35,9 @@ function run_dim_vs_nondim_study()
     end 
 end 
 
-function run_kekatos_comparison_study()
+function run_kekatos_comparison_study(lb_alpha::Float64=1.1, ub_alpha::Float64=1.4, lb_injection::Float64 = 0.75, ub_injection::Float64 = 1.25)
     eos_list = [:ideal, :full_cnga]
-    cases = ["GasLib-11", "GasLib-24", "GasLib-40", "GasLib-134"] 
+    cases = ["GasLib-11", "GasLib-24", "GasLib-40", "GasLib-40-multiple-slacks", "GasLib-134"] 
 
     output_folder = "./output/comparison-study/"
     data_folder = "./data/"
@@ -53,7 +55,8 @@ function run_kekatos_comparison_study()
                 else 
                     case * "-" * eos_string * ".csv" 
                 end 
-                paper_runs(folder::AbstractString, eos::Symbol; num_runs = num_runs, 
+                paper_runs(folder::AbstractString, eos::Symbol; lb_alpha=lb_alpha, ub_alpha=ub_alpha, lb_injection= lb_injection, 
+                    ub_injection=ub_injection, num_runs = num_runs, 
                     output_folder = output_folder, 
                     output_file = output_file, 
                     case_name = case, dimensional = dimensional) 
@@ -62,4 +65,35 @@ function run_kekatos_comparison_study()
     end 
 end 
 
-run_deviation_study() = ideal_vs_non_ideal_runs()
+function run_multiple_slack_study(lb_alpha::Float64=1.1, ub_alpha::Float64=1.4, lb_injection::Float64 = 0.75, ub_injection::Float64 = 1.25)
+    eos_list = [:ideal, :full_cnga]
+    cases = ["GasLib-40-multiple-slacks"] 
+
+    output_folder = "./output/comparison-study/"
+    data_folder = "./data/"
+
+    num_runs = 500 
+
+    for case in cases 
+        for eos in eos_list 
+            for dimensional in [false]
+                folder = data_folder * case * "/"
+                eos_string = (eos == :ideal) ? "ideal" : "cnga"
+
+                output_file = if dimensional 
+                    case * "-" * eos_string * "-d.csv" 
+                else 
+                    case * "-" * eos_string * ".csv" 
+                end 
+                paper_runs(folder::AbstractString, eos::Symbol; lb_alpha=lb_alpha, ub_alpha=ub_alpha, 
+                    lb_injection= lb_injection, ub_injection=ub_injection,
+                    num_runs = num_runs, 
+                    output_folder = output_folder, 
+                    output_file = output_file, 
+                    case_name = case, dimensional = dimensional) 
+            end 
+        end 
+    end 
+end 
+
+run_deviation_study() = ideal_vs_non_ideal_runs(lb_alpha=1.1, ub_alpha=1.4, lb_injection=0.75, ub_injection=1.25)
