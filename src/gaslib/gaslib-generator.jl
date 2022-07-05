@@ -13,7 +13,8 @@ get_simulation_params(; T::Float64 = 288.70599999999996) =
 
 function generate_steady_sim_inputs_from_gaslib(file::AbstractString, 
     input_folder::AbstractString, output_folder::AbstractString;
-    compressor_ratio::Float64 = 1.5, control_valve_ratio::Float64 = 1.0)
+    compressor_ratio::Float64 = 1.5, control_valve_ratio::Float64 = 1.0, 
+    compressor_ids::Vector = [])
 
     data = parse_file(input_folder * file)
 
@@ -88,8 +89,8 @@ function generate_steady_sim_inputs_from_gaslib(file::AbstractString,
         network_data["compressors"][i] = Dict{String,Any}(
             "comp_id" => parse(Int, i),
             "comp_name" => "c" * i,
-            "from_node" => compressor["fr_junction"],
-            "to_node" => compressor["to_junction"]
+            "from_node" => (parse(Int, i) in compressor_ids) ? compressor["to_junction"] : compressor["fr_junction"],
+            "to_node" => (parse(Int, i) in compressor_ids) ? compressor["fr_junction"] : compressor["to_junction"]
         )
         bc["boundary_compressor"][i] = Dict{String,Any}(
             "control_type" => 0, "value" => compressor_ratio
@@ -171,13 +172,18 @@ function generate_steady_sim_inputs_from_gaslib(file::AbstractString,
 
 end 
 
-generate_steady_sim_inputs_from_gaslib("GasLib-11.zip", 
-    "./data/GasLib-benchmarks/", "./data/GasLib-11/")
-generate_steady_sim_inputs_from_gaslib("GasLib-24.zip", 
-    "./data/GasLib-benchmarks/", "./data/GasLib-24/")
-generate_steady_sim_inputs_from_gaslib("GasLib-40.zip", 
-    "./data/GasLib-benchmarks/", "./data/GasLib-40/")
-generate_steady_sim_inputs_from_gaslib("GasLib-134.zip", 
-    "./data/GasLib-benchmarks/", "./data/GasLib-134/")
+# generate_steady_sim_inputs_from_gaslib("GasLib-11.zip", 
+#     "./data/GasLib-benchmarks/", "./data/GasLib-11/")
+# generate_steady_sim_inputs_from_gaslib("GasLib-24.zip", 
+#     "./data/GasLib-benchmarks/", "./data/GasLib-24/")
+# generate_steady_sim_inputs_from_gaslib("GasLib-40.zip", 
+#     "./data/GasLib-benchmarks/", "./data/GasLib-40/")
+# generate_steady_sim_inputs_from_gaslib("GasLib-134.zip", 
+#     "./data/GasLib-benchmarks/", "./data/GasLib-134/")
 generate_steady_sim_inputs_from_gaslib("GasLib-135.zip", 
-    "./data/GasLib-benchmarks/", "./data/GasLib-135/")
+    "./data/GasLib-benchmarks/", "./data/GasLib-135/";
+    compressor_ids = [24, 23, 3, 2, 21])
+generate_steady_sim_inputs_from_gaslib("GasLib-582.zip", 
+    "./data/GasLib-benchmarks/", "./data/GasLib-582/")
+generate_steady_sim_inputs_from_gaslib("GasLib-4197.zip", 
+    "./data/GasLib-benchmarks/", "./data/GasLib-4197/")

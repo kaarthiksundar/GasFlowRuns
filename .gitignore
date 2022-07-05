@@ -31,6 +31,8 @@ Manifest.toml
 data/US-ouo-benchmarks
 data/US-open-benchmarks
 data/NAERM-benchmarks
+data/GasLib-benchmarks/old 
+data/GasLib-benchmarks/new
 src/matgas
 *.aux 
 *.log 

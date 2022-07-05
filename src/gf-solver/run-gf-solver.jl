@@ -7,9 +7,6 @@ using Random
 function run_gf_solver(data::Dict{String,Any}, eos::Symbol; kwargs...)
     ss = initialize_simulator(data, eos=eos)
     solver_return = run_simulator!(ss; kwargs...)
-    # if Int(solver_return.status) == 2
-    #     @show ss.sol["compressor_flow"][1] # this compressor is not in cycle
-    # end
     return solver_return
 end 
 

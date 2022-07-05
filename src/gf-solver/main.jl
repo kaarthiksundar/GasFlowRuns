@@ -33,9 +33,9 @@ function run_dim_vs_nondim_study()
     end 
 end 
 
-function run_kekatos_comparison_study()
+function run_kekatos_comparison_study(; cases = ["GasLib-11", "GasLib-24", "GasLib-40", "GasLib-134"])
     eos_list = [:ideal, :full_cnga]
-    cases = ["GasLib-11", "GasLib-24", "GasLib-40", "GasLib-134"] 
+     
 
     output_folder = "./output/comparison-study/"
     data_folder = "./data/"
