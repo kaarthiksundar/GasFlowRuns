@@ -37,7 +37,7 @@ end
 
 function run_kekatos_comparison_study(lb_alpha::Float64=1.1, ub_alpha::Float64=1.4, lb_injection::Float64 = 0.75, ub_injection::Float64 = 1.25)
     eos_list = [:ideal, :full_cnga]
-    cases = ["GasLib-11", "GasLib-24", "GasLib-40", "GasLib-40-multiple-slacks", "GasLib-134"] 
+    cases = ["GasLib-11", "GasLib-24", "GasLib-40", "GasLib-134"] 
 
     output_folder = "./output/comparison-study/"
     data_folder = "./data/"
