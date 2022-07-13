@@ -1,0 +1,1762 @@
+{
+  "nodes": {
+    "3": {
+      "y_coord": -118.8198,
+      "x_coord": 35.1583,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 3,
+      "slack_bool": 0,
+      "node_name": "n3"
+    },
+    "1": {
+      "y_coord": -118.834,
+      "x_coord": 35.1451,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 1,
+      "slack_bool": 0,
+      "node_name": "n1"
+    },
+    "470": {
+      "y_coord": -112.5698,
+      "x_coord": 38.9205,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 470,
+      "slack_bool": 0,
+      "node_name": "n470"
+    },
+    "101": {
+      "y_coord": -115.3961,
+      "x_coord": 36.0424,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 101,
+      "slack_bool": 0,
+      "node_name": "n101"
+    },
+    "65": {
+      "y_coord": -119.5604,
+      "x_coord": 35.2378,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 65,
+      "slack_bool": 0,
+      "node_name": "n65"
+    },
+    "53": {
+      "y_coord": -119.4178,
+      "x_coord": 35.1296,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 53,
+      "slack_bool": 0,
+      "node_name": "n53"
+    },
+    "335": {
+      "y_coord": -110.3911,
+      "x_coord": 41.7509,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 335,
+      "slack_bool": 0,
+      "node_name": "n335"
+    },
+    "236": {
+      "y_coord": -110.9007,
+      "x_coord": 41.5252,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 236,
+      "slack_bool": 0,
+      "node_name": "n236"
+    },
+    "42": {
+      "y_coord": -118.7873,
+      "x_coord": 35.1268,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 42,
+      "slack_bool": 0,
+      "node_name": "n42"
+    },
+    "228": {
+      "y_coord": -111.0314,
+      "x_coord": 41.1238,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 228,
+      "slack_bool": 0,
+      "node_name": "n228"
+    },
+    "190": {
+      "y_coord": -113.0697,
+      "x_coord": 38.3655,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 190,
+      "slack_bool": 0,
+      "node_name": "n190"
+    },
+    "227": {
+      "y_coord": -111.0211,
+      "x_coord": 41.1154,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 227,
+      "slack_bool": 0,
+      "node_name": "n227"
+    },
+    "213": {
+      "y_coord": -115.4315,
+      "x_coord": 35.6486,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 213,
+      "slack_bool": 0,
+      "node_name": "n213"
+    },
+    "10": {
+      "y_coord": -118.8847,
+      "x_coord": 35.3573,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 10,
+      "slack_bool": 0,
+      "node_name": "n10"
+    },
+    "163": {
+      "y_coord": -112.0282,
+      "x_coord": 40.5912,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 163,
+      "slack_bool": 0,
+      "node_name": "n163"
+    },
+    "214": {
+      "y_coord": -116.8689,
+      "x_coord": 34.8833,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 214,
+      "slack_bool": 0,
+      "node_name": "n214"
+    },
+    "230": {
+      "y_coord": -111.0411,
+      "x_coord": 41.1328,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 230,
+      "slack_bool": 0,
+      "node_name": "n230"
+    },
+    "87": {
+      "y_coord": -119.106,
+      "x_coord": 35.0598,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 87,
+      "slack_bool": 0,
+      "node_name": "n87"
+    },
+    "281": {
+      "y_coord": -113.0697,
+      "x_coord": 38.3655,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 281,
+      "slack_bool": 0,
+      "node_name": "n281"
+    },
+    "160": {
+      "y_coord": -111.9913,
+      "x_coord": 40.3828,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 160,
+      "slack_bool": 0,
+      "node_name": "n160"
+    },
+    "154": {
+      "y_coord": -111.9863,
+      "x_coord": 40.2817,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 154,
+      "slack_bool": 0,
+      "node_name": "n154"
+    },
+    "149": {
+      "y_coord": -111.9367,
+      "x_coord": 39.8773,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 149,
+      "slack_bool": 0,
+      "node_name": "n149"
+    },
+    "178": {
+      "y_coord": -112.1719,
+      "x_coord": 39.2678,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 178,
+      "slack_bool": 0,
+      "node_name": "n178"
+    },
+    "358": {
+      "y_coord": -115.4392,
+      "x_coord": 35.8029,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 358,
+      "slack_bool": 0,
+      "node_name": "n358"
+    },
+    "49": {
+      "y_coord": -119.4388,
+      "x_coord": 35.1484,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 49,
+      "slack_bool": 0,
+      "node_name": "n49"
+    },
+    "59": {
+      "y_coord": -119.5719,
+      "x_coord": 35.267,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 59,
+      "slack_bool": 0,
+      "node_name": "n59"
+    },
+    "275": {
+      "y_coord": -113.6386,
+      "x_coord": 37.4144,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 275,
+      "slack_bool": 0,
+      "node_name": "n275"
+    },
+    "176": {
+      "y_coord": -112.4403,
+      "x_coord": 39.0297,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 176,
+      "slack_bool": 0,
+      "node_name": "n176"
+    },
+    "182": {
+      "y_coord": -111.9311,
+      "x_coord": 39.6485,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 182,
+      "slack_bool": 0,
+      "node_name": "n182"
+    },
+    "196": {
+      "y_coord": -114.9285,
+      "x_coord": 36.3941,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 196,
+      "slack_bool": 0,
+      "node_name": "n196"
+    },
+    "274": {
+      "y_coord": -113.7539,
+      "x_coord": 37.3017,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 274,
+      "slack_bool": 0,
+      "node_name": "n274"
+    },
+    "280": {
+      "y_coord": -118.4525,
+      "x_coord": 35.1124,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 280,
+      "slack_bool": 0,
+      "node_name": "n280"
+    },
+    "234": {
+      "y_coord": -110.9084,
+      "x_coord": 41.452,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 234,
+      "slack_bool": 0,
+      "node_name": "n234"
+    },
+    "237": {
+      "y_coord": -111.8787,
+      "x_coord": 40.9421,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 237,
+      "slack_bool": 0,
+      "node_name": "n237"
+    },
+    "286": {
+      "y_coord": -111.0444,
+      "x_coord": 41.0894,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 286,
+      "slack_bool": 0,
+      "node_name": "n286"
+    },
+    "44": {
+      "y_coord": -118.7589,
+      "x_coord": 35.1318,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 44,
+      "slack_bool": 0,
+      "node_name": "n44"
+    },
+    "55": {
+      "y_coord": -119.6032,
+      "x_coord": 35.2903,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 55,
+      "slack_bool": 0,
+      "node_name": "n55"
+    },
+    "161": {
+      "y_coord": -112.0319,
+      "x_coord": 40.6087,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 161,
+      "slack_bool": 0,
+      "node_name": "n161"
+    },
+    "126": {
+      "y_coord": -114.831,
+      "x_coord": 36.4414,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 126,
+      "slack_bool": 0,
+      "node_name": "n126"
+    },
+    "152": {
+      "y_coord": -111.9487,
+      "x_coord": 39.9584,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 152,
+      "slack_bool": 0,
+      "node_name": "n152"
+    },
+    "37": {
+      "y_coord": -119.0043,
+      "x_coord": 35.4963,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 37,
+      "slack_bool": 0,
+      "node_name": "n37"
+    },
+    "433": {
+      "y_coord": -116.8689,
+      "x_coord": 34.8833,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 433,
+      "slack_bool": 0,
+      "node_name": "n433"
+    },
+    "245": {
+      "y_coord": -110.8622,
+      "x_coord": 41.3302,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 245,
+      "slack_bool": 0,
+      "node_name": "n245"
+    },
+    "20": {
+      "y_coord": -118.9737,
+      "x_coord": 35.4479,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 20,
+      "slack_bool": 0,
+      "node_name": "n20"
+    },
+    "266": {
+      "y_coord": -111.0444,
+      "x_coord": 41.0894,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 266,
+      "slack_bool": 0,
+      "node_name": "n266"
+    },
+    "6": {
+      "y_coord": -118.8198,
+      "x_coord": 35.3125,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 6,
+      "slack_bool": 0,
+      "node_name": "n6"
+    },
+    "252": {
+      "y_coord": -110.6353,
+      "x_coord": 41.5902,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 252,
+      "slack_bool": 0,
+      "node_name": "n252"
+    },
+    "216": {
+      "y_coord": -115.4392,
+      "x_coord": 35.8029,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 216,
+      "slack_bool": 0,
+      "node_name": "n216"
+    },
+    "104": {
+      "y_coord": -115.0566,
+      "x_coord": 36.2836,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 104,
+      "slack_bool": 0,
+      "node_name": "n104"
+    },
+    "533": {
+      "y_coord": -112.0167,
+      "x_coord": 40.5359,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 533,
+      "slack_bool": 0,
+      "node_name": "n533"
+    },
+    "124": {
+      "y_coord": -114.9027,
+      "x_coord": 36.434,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 124,
+      "slack_bool": 0,
+      "node_name": "n124"
+    },
+    "238": {
+      "y_coord": -111.8013,
+      "x_coord": 40.9421,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 238,
+      "slack_bool": 0,
+      "node_name": "n238"
+    },
+    "209": {
+      "y_coord": -115.4482,
+      "x_coord": 35.8418,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 209,
+      "slack_bool": 0,
+      "node_name": "n209"
+    },
+    "185": {
+      "y_coord": -113.6289,
+      "x_coord": 37.4259,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 185,
+      "slack_bool": 0,
+      "node_name": "n185"
+    },
+    "174": {
+      "y_coord": -112.5698,
+      "x_coord": 38.9205,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 174,
+      "slack_bool": 0,
+      "node_name": "n174"
+    },
+    "231": {
+      "y_coord": -110.3254,
+      "x_coord": 41.7831,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 231,
+      "slack_bool": 0,
+      "node_name": "n231"
+    },
+    "165": {
+      "y_coord": -112.0167,
+      "x_coord": 40.5359,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 165,
+      "slack_bool": 0,
+      "node_name": "n165"
+    },
+    "194": {
+      "y_coord": -114.0495,
+      "x_coord": 37.0706,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 194,
+      "slack_bool": 0,
+      "node_name": "n194"
+    },
+    "8": {
+      "y_coord": -118.8583,
+      "x_coord": 35.3374,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 8,
+      "slack_bool": 0,
+      "node_name": "n8"
+    },
+    "177": {
+      "y_coord": -112.2945,
+      "x_coord": 39.1347,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 177,
+      "slack_bool": 0,
+      "node_name": "n177"
+    },
+    "254": {
+      "y_coord": -110.3911,
+      "x_coord": 41.7509,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 254,
+      "slack_bool": 0,
+      "node_name": "n254"
+    },
+    "222": {
+      "y_coord": -118.338,
+      "x_coord": 35.0603,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 222,
+      "slack_bool": 0,
+      "node_name": "n222"
+    },
+    "91": {
+      "y_coord": -118.928,
+      "x_coord": 35.0484,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 91,
+      "slack_bool": 0,
+      "node_name": "n91"
+    },
+    "173": {
+      "y_coord": -112.6584,
+      "x_coord": 38.8384,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 173,
+      "slack_bool": 0,
+      "node_name": "n173"
+    },
+    "102": {
+      "y_coord": -115.3816,
+      "x_coord": 36.0606,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 102,
+      "slack_bool": 0,
+      "node_name": "n102"
+    },
+    "158": {
+      "y_coord": -112.0435,
+      "x_coord": 40.6642,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 158,
+      "slack_bool": 0,
+      "node_name": "n158"
+    },
+    "233": {
+      "y_coord": -110.854,
+      "x_coord": 41.3425,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 233,
+      "slack_bool": 0,
+      "node_name": "n233"
+    },
+    "4": {
+      "y_coord": -118.8157,
+      "x_coord": 35.1948,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 4,
+      "slack_bool": 0,
+      "node_name": "n4"
+    },
+    "156": {
+      "y_coord": -111.9895,
+      "x_coord": 40.3474,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 156,
+      "slack_bool": 0,
+      "node_name": "n156"
+    },
+    "221": {
+      "y_coord": -117.82,
+      "x_coord": 35.0185,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 221,
+      "slack_bool": 0,
+      "node_name": "n221"
+    },
+    "239": {
+      "y_coord": -111.9811,
+      "x_coord": 40.8632,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 239,
+      "slack_bool": 0,
+      "node_name": "n239"
+    },
+    "210": {
+      "y_coord": -115.3912,
+      "x_coord": 36.0249,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 210,
+      "slack_bool": 0,
+      "node_name": "n210"
+    },
+    "11": {
+      "y_coord": -118.9781,
+      "x_coord": 35.3888,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 11,
+      "slack_bool": 0,
+      "node_name": "n11"
+    },
+    "579": {
+      "y_coord": -113.7539,
+      "x_coord": 37.3017,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 579,
+      "slack_bool": 0,
+      "node_name": "n579"
+    },
+    "134": {
+      "y_coord": -117.5256,
+      "x_coord": 34.9855,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 134,
+      "slack_bool": 1,
+      "node_name": "n134"
+    },
+    "133": {
+      "y_coord": -117.3604,
+      "x_coord": 34.5996,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 133,
+      "slack_bool": 0,
+      "node_name": "n133"
+    },
+    "148": {
+      "y_coord": -112.0095,
+      "x_coord": 40.7839,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 148,
+      "slack_bool": 0,
+      "node_name": "n148"
+    },
+    "131": {
+      "y_coord": -114.5393,
+      "x_coord": 36.6495,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 131,
+      "slack_bool": 0,
+      "node_name": "n131"
+    },
+    "61": {
+      "y_coord": -119.5682,
+      "x_coord": 35.2575,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 61,
+      "slack_bool": 0,
+      "node_name": "n61"
+    },
+    "67": {
+      "y_coord": -119.5299,
+      "x_coord": 35.1949,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 67,
+      "slack_bool": 0,
+      "node_name": "n67"
+    },
+    "108": {
+      "y_coord": -118.8949,
+      "x_coord": 35.3644,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 108,
+      "slack_bool": 0,
+      "node_name": "n108"
+    },
+    "16": {
+      "y_coord": -118.9659,
+      "x_coord": 35.4203,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 16,
+      "slack_bool": 0,
+      "node_name": "n16"
+    },
+    "100": {
+      "y_coord": -118.5945,
+      "x_coord": 35.1103,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 100,
+      "slack_bool": 0,
+      "node_name": "n100"
+    },
+    "246": {
+      "y_coord": -110.814,
+      "x_coord": 41.3878,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 246,
+      "slack_bool": 0,
+      "node_name": "n246"
+    },
+    "316": {
+      "y_coord": -110.8622,
+      "x_coord": 41.3302,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 316,
+      "slack_bool": 0,
+      "node_name": "n316"
+    },
+    "385": {
+      "y_coord": -114.9027,
+      "x_coord": 36.434,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 385,
+      "slack_bool": 0,
+      "node_name": "n385"
+    },
+    "556": {
+      "y_coord": -111.0444,
+      "x_coord": 41.0894,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 556,
+      "slack_bool": 0,
+      "node_name": "n556"
+    },
+    "46": {
+      "y_coord": -118.7264,
+      "x_coord": 35.107,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 46,
+      "slack_bool": 0,
+      "node_name": "n46"
+    },
+    "188": {
+      "y_coord": -113.0962,
+      "x_coord": 38.3216,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 188,
+      "slack_bool": 0,
+      "node_name": "n188"
+    },
+    "68": {
+      "y_coord": -119.5585,
+      "x_coord": 35.2164,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 68,
+      "slack_bool": 0,
+      "node_name": "n68"
+    },
+    "56": {
+      "y_coord": -119.6296,
+      "x_coord": 35.3059,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 56,
+      "slack_bool": 0,
+      "node_name": "n56"
+    },
+    "116": {
+      "y_coord": -118.941,
+      "x_coord": 35.3815,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 116,
+      "slack_bool": 0,
+      "node_name": "n116"
+    },
+    "139": {
+      "y_coord": -111.5951,
+      "x_coord": 40.9431,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 139,
+      "slack_bool": 0,
+      "node_name": "n139"
+    },
+    "36": {
+      "y_coord": -118.9945,
+      "x_coord": 35.484,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 36,
+      "slack_bool": 0,
+      "node_name": "n36"
+    },
+    "186": {
+      "y_coord": -113.5683,
+      "x_coord": 37.673,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 186,
+      "slack_bool": 0,
+      "node_name": "n186"
+    },
+    "301": {
+      "y_coord": -111.9487,
+      "x_coord": 39.9584,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 301,
+      "slack_bool": 0,
+      "node_name": "n301"
+    },
+    "262": {
+      "y_coord": -110.3448,
+      "x_coord": 41.7736,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 262,
+      "slack_bool": 0,
+      "node_name": "n262"
+    },
+    "48": {
+      "y_coord": -118.8766,
+      "x_coord": 35.0556,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 48,
+      "slack_bool": 0,
+      "node_name": "n48"
+    },
+    "103": {
+      "y_coord": -115.3072,
+      "x_coord": 36.2522,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 103,
+      "slack_bool": 0,
+      "node_name": "n103"
+    },
+    "232": {
+      "y_coord": -110.2196,
+      "x_coord": 41.8364,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 232,
+      "slack_bool": 0,
+      "node_name": "n232"
+    },
+    "132": {
+      "y_coord": -114.4982,
+      "x_coord": 36.6076,
+      "min_pressure": 2.068e6,
+      "max_pressure": 5.861e6,
+      "node_id": 132,
+      "slack_bool": 0,
+      "node_name": "n132"
+    }
+  },
+  "short_pipes": {},
+  "valves": {},
+  "pipes": {
+    "109": {
+      "length": 21233.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p109",
+      "pipe_id": 109,
+      "to_node": 216,
+      "diameter": 0.9144,
+      "from_node": 213
+    },
+    "30": {
+      "length": 1732.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p30",
+      "pipe_id": 30,
+      "to_node": 59,
+      "diameter": 0.9144,
+      "from_node": 55
+    },
+    "1": {
+      "length": 2394.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p1",
+      "pipe_id": 1,
+      "to_node": 3,
+      "diameter": 0.9144,
+      "from_node": 1
+    },
+    "54": {
+      "length": 1492.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p54",
+      "pipe_id": 54,
+      "to_node": 108,
+      "diameter": 0.9144,
+      "from_node": 10
+    },
+    "78": {
+      "length": 9562.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p78",
+      "pipe_id": 78,
+      "to_node": 156,
+      "diameter": 0.9144,
+      "from_node": 154
+    },
+    "81": {
+      "length": 8178.000000000001,
+      "friction_factor": 0.01,
+      "pipe_name": "p81",
+      "pipe_id": 81,
+      "to_node": 161,
+      "diameter": 0.9144,
+      "from_node": 158
+    },
+    "101": {
+      "length": 5737.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p101",
+      "pipe_id": 101,
+      "to_node": 196,
+      "diameter": 0.9144,
+      "from_node": 385
+    },
+    "2": {
+      "length": 4965.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p2",
+      "pipe_id": 2,
+      "to_node": 4,
+      "diameter": 0.9144,
+      "from_node": 3
+    },
+    "3": {
+      "length": 15980.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p3",
+      "pipe_id": 3,
+      "to_node": 6,
+      "diameter": 0.9144,
+      "from_node": 4
+    },
+    "74": {
+      "length": 16888.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p74",
+      "pipe_id": 74,
+      "to_node": 148,
+      "diameter": 0.9144,
+      "from_node": 158
+    },
+    "51": {
+      "length": 2968.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p51",
+      "pipe_id": 51,
+      "to_node": 102,
+      "diameter": 0.9144,
+      "from_node": 101
+    },
+    "53": {
+      "length": 30760.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p53",
+      "pipe_id": 53,
+      "to_node": 103,
+      "diameter": 0.9144,
+      "from_node": 102
+    },
+    "106": {
+      "length": 2467.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p106",
+      "pipe_id": 106,
+      "to_node": 210,
+      "diameter": 0.9144,
+      "from_node": 101
+    },
+    "119": {
+      "length": 8606.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p119",
+      "pipe_id": 119,
+      "to_node": 238,
+      "diameter": 0.9144,
+      "from_node": 237
+    },
+    "42": {
+      "length": 2941.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p42",
+      "pipe_id": 42,
+      "to_node": 68,
+      "diameter": 0.9144,
+      "from_node": 65
+    },
+    "33": {
+      "length": 1850.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p33",
+      "pipe_id": 33,
+      "to_node": 65,
+      "diameter": 0.9144,
+      "from_node": 61
+    },
+    "28": {
+      "length": 3619.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p28",
+      "pipe_id": 28,
+      "to_node": 56,
+      "diameter": 0.9144,
+      "from_node": 55
+    },
+    "50": {
+      "length": 14693.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p50",
+      "pipe_id": 50,
+      "to_node": 100,
+      "diameter": 0.9144,
+      "from_node": 46
+    },
+    "52": {
+      "length": 30927.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p52",
+      "pipe_id": 52,
+      "to_node": 104,
+      "diameter": 0.9144,
+      "from_node": 103
+    },
+    "111": {
+      "length": 58049.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p111",
+      "pipe_id": 111,
+      "to_node": 222,
+      "diameter": 0.9144,
+      "from_node": 221
+    },
+    "63": {
+      "length": 7371.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p63",
+      "pipe_id": 63,
+      "to_node": 126,
+      "diameter": 0.9144,
+      "from_node": 385
+    },
+    "121": {
+      "length": 12044.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p121",
+      "pipe_id": 121,
+      "to_node": 239,
+      "diameter": 0.9144,
+      "from_node": 148
+    },
+    "115": {
+      "length": 1707.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p115",
+      "pipe_id": 115,
+      "to_node": 230,
+      "diameter": 0.9144,
+      "from_node": 228
+    },
+    "141": {
+      "length": 15807.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p141",
+      "pipe_id": 141,
+      "to_node": 280,
+      "diameter": 0.9144,
+      "from_node": 100
+    },
+    "92": {
+      "length": 33969.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p92",
+      "pipe_id": 92,
+      "to_node": 182,
+      "diameter": 0.9144,
+      "from_node": 149
+    },
+    "88": {
+      "length": 21227.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p88",
+      "pipe_id": 88,
+      "to_node": 176,
+      "diameter": 0.9144,
+      "from_node": 174
+    },
+    "93": {
+      "length": 42120.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p93",
+      "pipe_id": 93,
+      "to_node": 186,
+      "diameter": 0.9144,
+      "from_node": 185
+    },
+    "10": {
+      "length": 1853.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p10",
+      "pipe_id": 10,
+      "to_node": 20,
+      "diameter": 0.9144,
+      "from_node": 16
+    },
+    "120": {
+      "length": 16241.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p120",
+      "pipe_id": 120,
+      "to_node": 239,
+      "diameter": 0.9144,
+      "from_node": 237
+    },
+    "77": {
+      "length": 47084.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p77",
+      "pipe_id": 77,
+      "to_node": 154,
+      "diameter": 0.9144,
+      "from_node": 301
+    },
+    "24": {
+      "length": 14132.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p24",
+      "pipe_id": 24,
+      "to_node": 48,
+      "diameter": 0.9144,
+      "from_node": 1
+    },
+    "87": {
+      "length": 15303.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p87",
+      "pipe_id": 87,
+      "to_node": 470,
+      "diameter": 0.9144,
+      "from_node": 173
+    },
+    "117": {
+      "length": 18018.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p117",
+      "pipe_id": 117,
+      "to_node": 234,
+      "diameter": 0.9144,
+      "from_node": 233
+    },
+    "58": {
+      "length": 4708.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p58",
+      "pipe_id": 58,
+      "to_node": 116,
+      "diameter": 0.9144,
+      "from_node": 108
+    },
+    "25": {
+      "length": 10156.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p25",
+      "pipe_id": 25,
+      "to_node": 67,
+      "diameter": 0.9144,
+      "from_node": 49
+    },
+    "114": {
+      "length": 1682.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p114",
+      "pipe_id": 114,
+      "to_node": 228,
+      "diameter": 0.9144,
+      "from_node": 227
+    },
+    "23": {
+      "length": 4941.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p23",
+      "pipe_id": 23,
+      "to_node": 46,
+      "diameter": 0.9144,
+      "from_node": 44
+    },
+    "89": {
+      "length": 24147.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p89",
+      "pipe_id": 89,
+      "to_node": 178,
+      "diameter": 0.9144,
+      "from_node": 177
+    },
+    "5": {
+      "length": 3992.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p5",
+      "pipe_id": 5,
+      "to_node": 10,
+      "diameter": 0.9144,
+      "from_node": 8
+    },
+    "31": {
+      "length": 1355.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p31",
+      "pipe_id": 31,
+      "to_node": 61,
+      "diameter": 0.9144,
+      "from_node": 59
+    },
+    "122": {
+      "length": 36206.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p122",
+      "pipe_id": 122,
+      "to_node": 316,
+      "diameter": 0.9144,
+      "from_node": 227
+    },
+    "90": {
+      "length": 22132.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p90",
+      "pipe_id": 90,
+      "to_node": 177,
+      "diameter": 0.9144,
+      "from_node": 176
+    },
+    "39": {
+      "length": 4290.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p39",
+      "pipe_id": 39,
+      "to_node": 49,
+      "diameter": 0.9144,
+      "from_node": 53
+    },
+    "112": {
+      "length": 33063.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p112",
+      "pipe_id": 112,
+      "to_node": 134,
+      "diameter": 0.9144,
+      "from_node": 221
+    },
+    "34": {
+      "length": 4320.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p34",
+      "pipe_id": 34,
+      "to_node": 68,
+      "diameter": 0.9144,
+      "from_node": 67
+    },
+    "44": {
+      "length": 38117.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p44",
+      "pipe_id": 44,
+      "to_node": 87,
+      "diameter": 0.9144,
+      "from_node": 53
+    },
+    "129": {
+      "length": 6023.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p129",
+      "pipe_id": 129,
+      "to_node": 262,
+      "diameter": 0.9144,
+      "from_node": 254
+    },
+    "137": {
+      "length": 47851.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p137",
+      "pipe_id": 137,
+      "to_node": 579,
+      "diameter": 0.9144,
+      "from_node": 194
+    },
+    "94": {
+      "length": 107021.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p94",
+      "pipe_id": 94,
+      "to_node": 188,
+      "diameter": 0.9144,
+      "from_node": 186
+    },
+    "126": {
+      "length": 35969.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p126",
+      "pipe_id": 126,
+      "to_node": 252,
+      "diameter": 0.9144,
+      "from_node": 246
+    },
+    "99": {
+      "length": 7371.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p99",
+      "pipe_id": 99,
+      "to_node": 126,
+      "diameter": 0.9144,
+      "from_node": 385
+    },
+    "47": {
+      "length": 6046.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p47",
+      "pipe_id": 47,
+      "to_node": 91,
+      "diameter": 0.9144,
+      "from_node": 48
+    },
+    "82": {
+      "length": 2589.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p82",
+      "pipe_id": 82,
+      "to_node": 163,
+      "diameter": 0.9144,
+      "from_node": 161
+    },
+    "20": {
+      "length": 1997.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p20",
+      "pipe_id": 20,
+      "to_node": 37,
+      "diameter": 0.9144,
+      "from_node": 36
+    },
+    "84": {
+      "length": 21354.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p84",
+      "pipe_id": 84,
+      "to_node": 533,
+      "diameter": 0.9144,
+      "from_node": 160
+    },
+    "80": {
+      "length": 5162.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p80",
+      "pipe_id": 80,
+      "to_node": 160,
+      "diameter": 0.9144,
+      "from_node": 156
+    },
+    "98": {
+      "length": 22155.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p98",
+      "pipe_id": 98,
+      "to_node": 196,
+      "diameter": 0.9144,
+      "from_node": 104
+    },
+    "110": {
+      "length": 74884.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p110",
+      "pipe_id": 110,
+      "to_node": 134,
+      "diameter": 0.9144,
+      "from_node": 433
+    },
+    "70": {
+      "length": 71886.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p70",
+      "pipe_id": 70,
+      "to_node": 286,
+      "diameter": 0.9144,
+      "from_node": 139
+    },
+    "127": {
+      "length": 36874.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p127",
+      "pipe_id": 127,
+      "to_node": 335,
+      "diameter": 0.9144,
+      "from_node": 252
+    },
+    "96": {
+      "length": 81880.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p96",
+      "pipe_id": 96,
+      "to_node": 190,
+      "diameter": 0.9144,
+      "from_node": 173
+    },
+    "123": {
+      "length": 10065.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p123",
+      "pipe_id": 123,
+      "to_node": 246,
+      "diameter": 0.9144,
+      "from_node": 245
+    },
+    "8": {
+      "length": 3547.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p8",
+      "pipe_id": 8,
+      "to_node": 16,
+      "diameter": 0.9144,
+      "from_node": 11
+    },
+    "140": {
+      "length": 14564.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p140",
+      "pipe_id": 140,
+      "to_node": 280,
+      "diameter": 0.9144,
+      "from_node": 222
+    },
+    "91": {
+      "length": 63518.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p91",
+      "pipe_id": 91,
+      "to_node": 182,
+      "diameter": 0.9144,
+      "from_node": 178
+    },
+    "107": {
+      "length": 194973.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p107",
+      "pipe_id": 107,
+      "to_node": 433,
+      "diameter": 0.9144,
+      "from_node": 213
+    },
+    "60": {
+      "length": 1778.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p60",
+      "pipe_id": 60,
+      "to_node": 116,
+      "diameter": 0.9144,
+      "from_node": 11
+    },
+    "97": {
+      "length": 126778.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p97",
+      "pipe_id": 97,
+      "to_node": 194,
+      "diameter": 0.9144,
+      "from_node": 126
+    },
+    "4": {
+      "length": 5462.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p4",
+      "pipe_id": 4,
+      "to_node": 8,
+      "diameter": 0.9144,
+      "from_node": 6
+    },
+    "22": {
+      "length": 3239.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p22",
+      "pipe_id": 22,
+      "to_node": 44,
+      "diameter": 0.9144,
+      "from_node": 42
+    },
+    "136": {
+      "length": 22961.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p136",
+      "pipe_id": 136,
+      "to_node": 238,
+      "diameter": 0.9144,
+      "from_node": 139
+    },
+    "67": {
+      "length": 62577.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p67",
+      "pipe_id": 67,
+      "to_node": 134,
+      "diameter": 0.9144,
+      "from_node": 133
+    },
+    "108": {
+      "length": 5413.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p108",
+      "pipe_id": 108,
+      "to_node": 358,
+      "diameter": 0.9144,
+      "from_node": 209
+    },
+    "118": {
+      "length": 10875.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p118",
+      "pipe_id": 118,
+      "to_node": 245,
+      "diameter": 0.9144,
+      "from_node": 234
+    },
+    "21": {
+      "length": 5754.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p21",
+      "pipe_id": 21,
+      "to_node": 42,
+      "diameter": 0.9144,
+      "from_node": 1
+    },
+    "83": {
+      "length": 8166.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p83",
+      "pipe_id": 83,
+      "to_node": 165,
+      "diameter": 0.9144,
+      "from_node": 163
+    },
+    "45": {
+      "length": 20188.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p45",
+      "pipe_id": 45,
+      "to_node": 91,
+      "diameter": 0.9144,
+      "from_node": 87
+    },
+    "139": {
+      "length": 20903.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p139",
+      "pipe_id": 139,
+      "to_node": 275,
+      "diameter": 0.9144,
+      "from_node": 274
+    },
+    "116": {
+      "length": 14195.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p116",
+      "pipe_id": 116,
+      "to_node": 232,
+      "diameter": 0.9144,
+      "from_node": 231
+    },
+    "95": {
+      "length": 6868.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p95",
+      "pipe_id": 95,
+      "to_node": 281,
+      "diameter": 0.9144,
+      "from_node": 188
+    },
+    "138": {
+      "length": 1928.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p138",
+      "pipe_id": 138,
+      "to_node": 275,
+      "diameter": 0.9144,
+      "from_node": 185
+    },
+    "76": {
+      "length": 11672.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p76",
+      "pipe_id": 76,
+      "to_node": 152,
+      "diameter": 0.9144,
+      "from_node": 149
+    },
+    "135": {
+      "length": 4557.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p135",
+      "pipe_id": 135,
+      "to_node": 266,
+      "diameter": 0.9144,
+      "from_node": 227
+    },
+    "18": {
+      "length": 3350.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p18",
+      "pipe_id": 18,
+      "to_node": 36,
+      "diameter": 0.9144,
+      "from_node": 20
+    },
+    "105": {
+      "length": 27297.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p105",
+      "pipe_id": 105,
+      "to_node": 210,
+      "diameter": 0.9144,
+      "from_node": 209
+    },
+    "132": {
+      "length": 2582.0,
+      "friction_factor": 0.01,
+      "pipe_name": "p132",
+      "pipe_id": 132,
+      "to_node": 262,
+      "diameter": 0.9144,
+      "from_node": 231
+    }
+  },
+  "resistors": {},
+  "loss_resistors": {},
+  "compressors": {
+    "2": {
+      "comp_id": 2,
+      "to_node": 286,
+      "comp_name": "c2",
+      "from_node": 266
+    },
+    "22": {
+      "comp_id": 22,
+      "to_node": 579,
+      "comp_name": "c22",
+      "from_node": 274
+    },
+    "11": {
+      "comp_id": 11,
+      "to_node": 358,
+      "comp_name": "c11",
+      "from_node": 216
+    },
+    "13": {
+      "comp_id": 13,
+      "to_node": 385,
+      "comp_name": "c13",
+      "from_node": 124
+    },
+    "5": {
+      "comp_id": 5,
+      "to_node": 301,
+      "comp_name": "c5",
+      "from_node": 152
+    },
+    "16": {
+      "comp_id": 16,
+      "to_node": 433,
+      "comp_name": "c16",
+      "from_node": 214
+    },
+    "21": {
+      "comp_id": 21,
+      "to_node": 533,
+      "comp_name": "c21",
+      "from_node": 165
+    },
+    "7": {
+      "comp_id": 7,
+      "to_node": 316,
+      "comp_name": "c7",
+      "from_node": 245
+    },
+    "0": {
+      "comp_id": 0,
+      "to_node": 281,
+      "comp_name": "c0",
+      "from_node": 190
+    },
+    "9": {
+      "comp_id": 9,
+      "to_node": 335,
+      "comp_name": "c9",
+      "from_node": 254
+    },
+    "18": {
+      "comp_id": 18,
+      "to_node": 470,
+      "comp_name": "c18",
+      "from_node": 174
+    }
+  },
+  "control_valves": {}
+}
