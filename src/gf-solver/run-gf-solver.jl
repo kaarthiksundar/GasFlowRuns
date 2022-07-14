@@ -50,7 +50,12 @@ function write_results(results::Dict{Int,Any}, num_runs, output_path)
 end 
 
 
-function paper_runs(folder::AbstractString, eos::Symbol; lb_alpha::Float64=1.1, ub_alpha::Float64=1.4, lb_injection::Float64 = 0.75, ub_injection::Float64 = 1.25, num_runs = 500, 
+function paper_runs(folder::AbstractString, eos::Symbol; 
+    lb_alpha::Float64=1.1, 
+    ub_alpha::Float64=1.4, 
+    lb_injection::Float64 = 0.75, 
+    ub_injection::Float64 = 1.25, 
+    num_runs = 500, 
     output_folder = "./output/", output_file = "8-node-ideal.csv", case_name = "8-node", 
     dimensional = false) 
     data_sample = GasSteadySim._parse_data(folder)
@@ -128,8 +133,8 @@ function ideal_vs_non_ideal_runs(;cases = ["GasLib-11", "GasLib-24", "GasLib-40"
     end 
 
     header = cases 
-    data_p = Array{Any,2}(undef, num_runs, 4)
-    data_rho = Array{Any,2}(undef, num_runs, 4)
+    data_p = Array{Any,2}(undef, num_runs, length(cases))
+    data_rho = Array{Any,2}(undef, num_runs, length(cases))
     for i in 1:num_runs 
         data_p[i, :] = [results_p[case][i] for case in cases]
         data_rho[i, :] = [results_rho[case][i] for case in cases]
