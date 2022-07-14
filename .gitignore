@@ -36,4 +36,5 @@ data/GasLib-benchmarks/new
 src/matgas
 *.aux 
 *.log 
-*.fls 
+*.fls
+*.sty
