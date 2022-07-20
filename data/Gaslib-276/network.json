@@ -30,8 +30,8 @@
     "1114": {
       "y_coord": 13.125527726400001,
       "x_coord": 49.23771997975,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1114,
       "slack_bool": 0,
       "node_name": "n1114"
@@ -48,8 +48,8 @@
     "1115": {
       "y_coord": 12.74240093365,
       "x_coord": 48.964503218450005,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1115,
       "slack_bool": 0,
       "node_name": "n1115"
@@ -57,8 +57,8 @@
     "1054": {
       "y_coord": 15.809534048549999,
       "x_coord": 50.9710856607,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1054,
       "slack_bool": 0,
       "node_name": "n1054"
@@ -75,8 +75,8 @@
     "1062": {
       "y_coord": 12.61447693455,
       "x_coord": 55.405850816400005,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1062,
       "slack_bool": 0,
       "node_name": "n1062"
@@ -84,8 +84,8 @@
     "1013": {
       "y_coord": 17.295740011150002,
       "x_coord": 55.5442865097,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1013,
       "slack_bool": 0,
       "node_name": "n1013"
@@ -93,8 +93,8 @@
     "1101": {
       "y_coord": 14.04603139525,
       "x_coord": 50.49924774045,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1101,
       "slack_bool": 0,
       "node_name": "n1101"
@@ -102,8 +102,8 @@
     "1027": {
       "y_coord": 8.428793910095,
       "x_coord": 49.6131550702,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1027,
       "slack_bool": 0,
       "node_name": "n1027"
@@ -111,8 +111,8 @@
     "1087": {
       "y_coord": 17.80996963775,
       "x_coord": 52.42106412515,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1087,
       "slack_bool": 0,
       "node_name": "n1087"
@@ -138,8 +138,8 @@
     "1139": {
       "y_coord": 11.544402677899999,
       "x_coord": 49.680502508100005,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1139,
       "slack_bool": 0,
       "node_name": "n1139"
@@ -147,8 +147,8 @@
     "1106": {
       "y_coord": 14.126109474549999,
       "x_coord": 49.5759644054,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1106,
       "slack_bool": 0,
       "node_name": "n1106"
@@ -174,8 +174,8 @@
     "1084": {
       "y_coord": 6.862244791815,
       "x_coord": 50.19913169675,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1084,
       "slack_bool": 0,
       "node_name": "n1084"
@@ -183,8 +183,8 @@
     "1029": {
       "y_coord": 7.737056370055001,
       "x_coord": 49.000110944750006,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1029,
       "slack_bool": 0,
       "node_name": "n1029"
@@ -210,8 +210,8 @@
     "1048": {
       "y_coord": 13.1579814497,
       "x_coord": 55.7775105475,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1048,
       "slack_bool": 0,
       "node_name": "n1048"
@@ -237,8 +237,8 @@
     "1093": {
       "y_coord": 18.1583222879,
       "x_coord": 54.95557062005,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1093,
       "slack_bool": 0,
       "node_name": "n1093"
@@ -255,8 +255,8 @@
     "1004": {
       "y_coord": 11.574028417600001,
       "x_coord": 49.6043211719,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1004,
       "slack_bool": 0,
       "node_name": "n1004"
@@ -264,8 +264,8 @@
     "1134": {
       "y_coord": 12.06410335875,
       "x_coord": 47.0658933722,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1134,
       "slack_bool": 0,
       "node_name": "n1134"
@@ -273,8 +273,8 @@
     "1077": {
       "y_coord": 10.9090893943,
       "x_coord": 53.03215686,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1077,
       "slack_bool": 0,
       "node_name": "n1077"
@@ -291,8 +291,8 @@
     "1086": {
       "y_coord": 16.46023588405,
       "x_coord": 53.51439467985,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1086,
       "slack_bool": 0,
       "node_name": "n1086"
@@ -318,8 +318,8 @@
     "1046": {
       "y_coord": 16.9734921491,
       "x_coord": 54.87609892265,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1046,
       "slack_bool": 0,
       "node_name": "n1046"
@@ -345,8 +345,8 @@
     "1117": {
       "y_coord": 12.4308646049,
       "x_coord": 48.57456469395,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1117,
       "slack_bool": 0,
       "node_name": "n1117"
@@ -372,8 +372,8 @@
     "1098": {
       "y_coord": 16.99239578205,
       "x_coord": 52.51429320005,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1098,
       "slack_bool": 0,
       "node_name": "n1098"
@@ -390,8 +390,8 @@
     "1052": {
       "y_coord": 19.2021582203,
       "x_coord": 55.17473211575,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1052,
       "slack_bool": 0,
       "node_name": "n1052"
@@ -408,8 +408,8 @@
     "1121": {
       "y_coord": 11.8488476904,
       "x_coord": 49.2848565166,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1121,
       "slack_bool": 0,
       "node_name": "n1121"
@@ -417,8 +417,8 @@
     "1007": {
       "y_coord": 11.04423039095,
       "x_coord": 49.9744059247,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1007,
       "slack_bool": 0,
       "node_name": "n1007"
@@ -426,8 +426,8 @@
     "1014": {
       "y_coord": 10.018559553825,
       "x_coord": 50.122498833899996,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1014,
       "slack_bool": 0,
       "node_name": "n1014"
@@ -453,8 +453,8 @@
     "1078": {
       "y_coord": 10.772115960050002,
       "x_coord": 52.70692167765,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1078,
       "slack_bool": 0,
       "node_name": "n1078"
@@ -471,8 +471,8 @@
     "1024": {
       "y_coord": 17.0838388375,
       "x_coord": 55.1684169427,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1024,
       "slack_bool": 0,
       "node_name": "n1024"
@@ -480,8 +480,8 @@
     "1018": {
       "y_coord": 9.499056049650001,
       "x_coord": 50.13142601465,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1018,
       "slack_bool": 0,
       "node_name": "n1018"
@@ -498,8 +498,8 @@
     "1032": {
       "y_coord": 7.8093837941299995,
       "x_coord": 50.86549540505,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1032,
       "slack_bool": 0,
       "node_name": "n1032"
@@ -507,8 +507,8 @@
     "1005": {
       "y_coord": 11.574028417600001,
       "x_coord": 49.6043211719,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1005,
       "slack_bool": 0,
       "node_name": "n1005"
@@ -543,8 +543,8 @@
     "1043": {
       "y_coord": 6.51130230802,
       "x_coord": 49.853157261549995,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1043,
       "slack_bool": 0,
       "node_name": "n1043"
@@ -561,8 +561,8 @@
     "1038": {
       "y_coord": 7.889353606409999,
       "x_coord": 50.58480957805,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1038,
       "slack_bool": 0,
       "node_name": "n1038"
@@ -570,8 +570,8 @@
     "1016": {
       "y_coord": 9.724678585340001,
       "x_coord": 50.28287278685,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1016,
       "slack_bool": 0,
       "node_name": "n1016"
@@ -588,8 +588,8 @@
     "1002": {
       "y_coord": 17.64912634185,
       "x_coord": 56.07155832085,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1002,
       "slack_bool": 0,
       "node_name": "n1002"
@@ -633,8 +633,8 @@
     "1060": {
       "y_coord": 14.3179066342,
       "x_coord": 54.8330657941,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1060,
       "slack_bool": 0,
       "node_name": "n1060"
@@ -642,8 +642,8 @@
     "1137": {
       "y_coord": 11.233594626550001,
       "x_coord": 50.86695472685,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1137,
       "slack_bool": 0,
       "node_name": "n1137"
@@ -669,8 +669,8 @@
     "1039": {
       "y_coord": 7.366745628185,
       "x_coord": 50.33293322415,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1039,
       "slack_bool": 0,
       "node_name": "n1039"
@@ -678,8 +678,8 @@
     "1103": {
       "y_coord": 13.93408533785,
       "x_coord": 49.8669295247,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1103,
       "slack_bool": 0,
       "node_name": "n1103"
@@ -696,8 +696,8 @@
     "1070": {
       "y_coord": 11.5686494259,
       "x_coord": 53.9031935309,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1070,
       "slack_bool": 0,
       "node_name": "n1070"
@@ -714,8 +714,8 @@
     "1019": {
       "y_coord": 9.110156628695,
       "x_coord": 49.7231639695,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1019,
       "slack_bool": 0,
       "node_name": "n1019"
@@ -723,8 +723,8 @@
     "1033": {
       "y_coord": 7.08820477024,
       "x_coord": 51.2248557871,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1033,
       "slack_bool": 0,
       "node_name": "n1033"
@@ -759,8 +759,8 @@
     "1071": {
       "y_coord": 15.46659613015,
       "x_coord": 51.818385634950005,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1071,
       "slack_bool": 0,
       "node_name": "n1071"
@@ -777,8 +777,8 @@
     "1050": {
       "y_coord": 16.105822095,
       "x_coord": 54.935155989600005,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1050,
       "slack_bool": 0,
       "node_name": "n1050"
@@ -795,8 +795,8 @@
     "1099": {
       "y_coord": 14.0865798576,
       "x_coord": 51.1011930148,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1099,
       "slack_bool": 0,
       "node_name": "n1099"
@@ -804,8 +804,8 @@
     "1083": {
       "y_coord": 16.573924716900002,
       "x_coord": 52.81963948525,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1083,
       "slack_bool": 0,
       "node_name": "n1083"
@@ -813,8 +813,8 @@
     "1112": {
       "y_coord": 11.923831311,
       "x_coord": 50.5942264569,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1112,
       "slack_bool": 0,
       "node_name": "n1112"
@@ -822,8 +822,8 @@
     "1102": {
       "y_coord": 13.76191391545,
       "x_coord": 50.232490900049996,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1102,
       "slack_bool": 0,
       "node_name": "n1102"
@@ -831,8 +831,8 @@
     "1036": {
       "y_coord": 7.364237260445,
       "x_coord": 50.9458559788,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1036,
       "slack_bool": 0,
       "node_name": "n1036"
@@ -840,8 +840,8 @@
     "1079": {
       "y_coord": 10.418056626950001,
       "x_coord": 52.76962462205,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1079,
       "slack_bool": 0,
       "node_name": "n1079"
@@ -849,8 +849,8 @@
     "1012": {
       "y_coord": 16.748016072,
       "x_coord": 51.27525062905,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1012,
       "slack_bool": 0,
       "node_name": "n1012"
@@ -858,8 +858,8 @@
     "1044": {
       "y_coord": 6.733914442955,
       "x_coord": 50.01395237085,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1044,
       "slack_bool": 0,
       "node_name": "n1044"
@@ -867,8 +867,8 @@
     "1128": {
       "y_coord": 16.7609870067,
       "x_coord": 51.519405710499996,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1128,
       "slack_bool": 0,
       "node_name": "n1128"
@@ -876,8 +876,8 @@
     "1132": {
       "y_coord": 11.99639650245,
       "x_coord": 47.629405374200005,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1132,
       "slack_bool": 0,
       "node_name": "n1132"
@@ -912,8 +912,8 @@
     "1090": {
       "y_coord": 18.02399358175,
       "x_coord": 54.7920842517,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1090,
       "slack_bool": 0,
       "node_name": "n1090"
@@ -921,8 +921,8 @@
     "1110": {
       "y_coord": 12.65082377295,
       "x_coord": 51.06695831185,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1110,
       "slack_bool": 0,
       "node_name": "n1110"
@@ -930,8 +930,8 @@
     "1049": {
       "y_coord": 16.64154062465,
       "x_coord": 54.77253793825,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1049,
       "slack_bool": 0,
       "node_name": "n1049"
@@ -948,8 +948,8 @@
     "1065": {
       "y_coord": 17.4839615599,
       "x_coord": 52.462671536049996,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1065,
       "slack_bool": 0,
       "node_name": "n1065"
@@ -957,8 +957,8 @@
     "1034": {
       "y_coord": 7.7290492233600006,
       "x_coord": 50.783923714400004,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1034,
       "slack_bool": 0,
       "node_name": "n1034"
@@ -966,8 +966,8 @@
     "1111": {
       "y_coord": 13.05602360955,
       "x_coord": 50.1873053501,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1111,
       "slack_bool": 0,
       "node_name": "n1111"
@@ -975,8 +975,8 @@
     "1075": {
       "y_coord": 10.261599974785,
       "x_coord": 53.60602490065,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1075,
       "slack_bool": 0,
       "node_name": "n1075"
@@ -984,8 +984,8 @@
     "1021": {
       "y_coord": 9.03292099106,
       "x_coord": 49.84330396565,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1021,
       "slack_bool": 0,
       "node_name": "n1021"
@@ -993,8 +993,8 @@
     "1141": {
       "y_coord": 11.544402677899999,
       "x_coord": 49.680502508100005,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1141,
       "slack_bool": 0,
       "node_name": "n1141"
@@ -1002,8 +1002,8 @@
     "1085": {
       "y_coord": 6.58748133899,
       "x_coord": 50.296556003700005,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1085,
       "slack_bool": 0,
       "node_name": "n1085"
@@ -1011,8 +1011,8 @@
     "1074": {
       "y_coord": 10.73116986745,
       "x_coord": 53.434816505499995,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1074,
       "slack_bool": 0,
       "node_name": "n1074"
@@ -1029,8 +1029,8 @@
     "1135": {
       "y_coord": 11.3346585287,
       "x_coord": 51.17025581435,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1135,
       "slack_bool": 0,
       "node_name": "n1135"
@@ -1038,8 +1038,8 @@
     "1055": {
       "y_coord": 13.20287442775,
       "x_coord": 55.63551991435,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1055,
       "slack_bool": 0,
       "node_name": "n1055"
@@ -1047,8 +1047,8 @@
     "1011": {
       "y_coord": 10.018559553825,
       "x_coord": 50.122498833899996,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1011,
       "slack_bool": 0,
       "node_name": "n1011"
@@ -1083,8 +1083,8 @@
     "1073": {
       "y_coord": 10.8963045049,
       "x_coord": 53.38414702055,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1073,
       "slack_bool": 0,
       "node_name": "n1073"
@@ -1119,8 +1119,8 @@
     "1001": {
       "y_coord": 19.047603439600003,
       "x_coord": 52.227554670900005,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1001,
       "slack_bool": 0,
       "node_name": "n1001"
@@ -1200,8 +1200,8 @@
     "1119": {
       "y_coord": 12.23981775825,
       "x_coord": 48.951002325800005,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1119,
       "slack_bool": 0,
       "node_name": "n1119"
@@ -1209,8 +1209,8 @@
     "1035": {
       "y_coord": 16.4096065432,
       "x_coord": 52.3089245215,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1035,
       "slack_bool": 0,
       "node_name": "n1035"
@@ -1227,8 +1227,8 @@
     "1081": {
       "y_coord": 10.95003253885,
       "x_coord": 52.339501936649995,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1081,
       "slack_bool": 0,
       "node_name": "n1081"
@@ -1236,8 +1236,8 @@
     "1122": {
       "y_coord": 11.8488476904,
       "x_coord": 49.2848565166,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1122,
       "slack_bool": 0,
       "node_name": "n1122"
@@ -1263,8 +1263,8 @@
     "1063": {
       "y_coord": 12.77980490745,
       "x_coord": 54.672405778850006,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1063,
       "slack_bool": 0,
       "node_name": "n1063"
@@ -1308,8 +1308,8 @@
     "1130": {
       "y_coord": 11.99639650245,
       "x_coord": 47.629405374200005,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1130,
       "slack_bool": 0,
       "node_name": "n1130"
@@ -1317,8 +1317,8 @@
     "1023": {
       "y_coord": 8.737409515205,
       "x_coord": 49.56465531165,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1023,
       "slack_bool": 0,
       "node_name": "n1023"
@@ -1326,8 +1326,8 @@
     "1064": {
       "y_coord": 12.77980490745,
       "x_coord": 54.672405778850006,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1064,
       "slack_bool": 0,
       "node_name": "n1064"
@@ -1353,8 +1353,8 @@
     "1061": {
       "y_coord": 13.0521409833,
       "x_coord": 55.0596757475,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1061,
       "slack_bool": 0,
       "node_name": "n1061"
@@ -1380,8 +1380,8 @@
     "1089": {
       "y_coord": 17.427383644800003,
       "x_coord": 54.73069884029999,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1089,
       "slack_bool": 0,
       "node_name": "n1089"
@@ -1389,8 +1389,8 @@
     "1051": {
       "y_coord": 15.3618329294,
       "x_coord": 54.9071815781,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1051,
       "slack_bool": 0,
       "node_name": "n1051"
@@ -1434,8 +1434,8 @@
     "1030": {
       "y_coord": 7.263252519885,
       "x_coord": 48.44861025185,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1030,
       "slack_bool": 0,
       "node_name": "n1030"
@@ -1452,8 +1452,8 @@
     "1109": {
       "y_coord": 17.0779335918,
       "x_coord": 51.392365440700004,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1109,
       "slack_bool": 0,
       "node_name": "n1109"
@@ -1479,8 +1479,8 @@
     "1080": {
       "y_coord": 9.97070280286,
       "x_coord": 52.8767918586,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1080,
       "slack_bool": 0,
       "node_name": "n1080"
@@ -1488,8 +1488,8 @@
     "1091": {
       "y_coord": 18.1296060145,
       "x_coord": 54.7706017208,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1091,
       "slack_bool": 0,
       "node_name": "n1091"
@@ -1497,8 +1497,8 @@
     "1096": {
       "y_coord": 14.22409066895,
       "x_coord": 51.32489017595,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1096,
       "slack_bool": 0,
       "node_name": "n1096"
@@ -1506,8 +1506,8 @@
     "1076": {
       "y_coord": 17.4839615599,
       "x_coord": 52.462671536049996,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1076,
       "slack_bool": 0,
       "node_name": "n1076"
@@ -1515,8 +1515,8 @@
     "1047": {
       "y_coord": 6.403988147215,
       "x_coord": 49.92325185275,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1047,
       "slack_bool": 0,
       "node_name": "n1047"
@@ -1524,8 +1524,8 @@
     "1113": {
       "y_coord": 13.80202885625,
       "x_coord": 49.2878883761,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1113,
       "slack_bool": 0,
       "node_name": "n1113"
@@ -1533,8 +1533,8 @@
     "1127": {
       "y_coord": 11.9182631823,
       "x_coord": 48.0904267153,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1127,
       "slack_bool": 0,
       "node_name": "n1127"
@@ -1551,8 +1551,8 @@
     "1010": {
       "y_coord": 10.244182089515,
       "x_coord": 50.2739456061,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1010,
       "slack_bool": 0,
       "node_name": "n1010"
@@ -1560,8 +1560,8 @@
     "1140": {
       "y_coord": 16.8508427448,
       "x_coord": 51.28383419995,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1140,
       "slack_bool": 0,
       "node_name": "n1140"
@@ -1596,8 +1596,8 @@
     "1026": {
       "y_coord": 8.428793910095,
       "x_coord": 49.6131550702,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1026,
       "slack_bool": 0,
       "node_name": "n1026"
@@ -1623,8 +1623,8 @@
     "1041": {
       "y_coord": 7.21945816567,
       "x_coord": 49.92259016855,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1041,
       "slack_bool": 0,
       "node_name": "n1041"
@@ -1668,8 +1668,8 @@
     "1053": {
       "y_coord": 13.1984637774,
       "x_coord": 55.7532866886,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1053,
       "slack_bool": 0,
       "node_name": "n1053"
@@ -1677,8 +1677,8 @@
     "1045": {
       "y_coord": 6.2348925862449995,
       "x_coord": 49.85846476725,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1045,
       "slack_bool": 0,
       "node_name": "n1045"
@@ -1686,8 +1686,8 @@
     "1067": {
       "y_coord": 12.2802984556,
       "x_coord": 54.388172666100004,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1067,
       "slack_bool": 0,
       "node_name": "n1067"
@@ -1695,8 +1695,8 @@
     "1124": {
       "y_coord": 12.0304138847,
       "x_coord": 49.92861749965,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1124,
       "slack_bool": 0,
       "node_name": "n1124"
@@ -1704,8 +1704,8 @@
     "1022": {
       "y_coord": 8.737409515205,
       "x_coord": 49.56465531165,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1022,
       "slack_bool": 0,
       "node_name": "n1022"
@@ -1722,8 +1722,8 @@
     "1108": {
       "y_coord": 14.2461680029,
       "x_coord": 49.56499036455,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1108,
       "slack_bool": 0,
       "node_name": "n1108"
@@ -1731,8 +1731,8 @@
     "1028": {
       "y_coord": 7.853390531505001,
       "x_coord": 49.593679745399996,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1028,
       "slack_bool": 0,
       "node_name": "n1028"
@@ -1776,8 +1776,8 @@
     "1118": {
       "y_coord": 12.23981775825,
       "x_coord": 48.951002325800005,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1118,
       "slack_bool": 0,
       "node_name": "n1118"
@@ -1803,8 +1803,8 @@
     "1040": {
       "y_coord": 7.488563487775,
       "x_coord": 49.67326994995,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1040,
       "slack_bool": 0,
       "node_name": "n1040"
@@ -1830,8 +1830,8 @@
     "1056": {
       "y_coord": 13.27618366955,
       "x_coord": 55.22276079745,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1056,
       "slack_bool": 0,
       "node_name": "n1056"
@@ -1875,8 +1875,8 @@
     "1031": {
       "y_coord": 8.21529441659,
       "x_coord": 50.6400472776,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1031,
       "slack_bool": 0,
       "node_name": "n1031"
@@ -1893,8 +1893,8 @@
     "1069": {
       "y_coord": 12.058943676950001,
       "x_coord": 54.3111367178,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1069,
       "slack_bool": 0,
       "node_name": "n1069"
@@ -1911,8 +1911,8 @@
     "1059": {
       "y_coord": 15.95714173505,
       "x_coord": 52.003169179400004,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1059,
       "slack_bool": 0,
       "node_name": "n1059"
@@ -1920,8 +1920,8 @@
     "1097": {
       "y_coord": 14.2723423039,
       "x_coord": 50.89534876405,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1097,
       "slack_bool": 0,
       "node_name": "n1097"
@@ -1956,8 +1956,8 @@
     "1105": {
       "y_coord": 14.126109474549999,
       "x_coord": 49.5759644054,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1105,
       "slack_bool": 0,
       "node_name": "n1105"
@@ -1965,8 +1965,8 @@
     "1072": {
       "y_coord": 11.12310333445,
       "x_coord": 53.490807488849995,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1072,
       "slack_bool": 0,
       "node_name": "n1072"
@@ -1974,8 +1974,8 @@
     "1126": {
       "y_coord": 11.9862363715,
       "x_coord": 48.5319452938,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1126,
       "slack_bool": 0,
       "node_name": "n1126"
@@ -1992,8 +1992,8 @@
     "1015": {
       "y_coord": 9.763816995620001,
       "x_coord": 50.51228598925,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1015,
       "slack_bool": 0,
       "node_name": "n1015"
@@ -2001,8 +2001,8 @@
     "1133": {
       "y_coord": 12.06410335875,
       "x_coord": 47.0658933722,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1133,
       "slack_bool": 0,
       "node_name": "n1133"
@@ -2010,8 +2010,8 @@
     "1009": {
       "y_coord": 10.7539510477,
       "x_coord": 50.077317862049995,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1009,
       "slack_bool": 0,
       "node_name": "n1009"
@@ -2037,8 +2037,8 @@
     "1057": {
       "y_coord": 13.27618366955,
       "x_coord": 55.22276079745,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1057,
       "slack_bool": 0,
       "node_name": "n1057"
@@ -2064,8 +2064,8 @@
     "1131": {
       "y_coord": 18.09794954325,
       "x_coord": 52.3828021306,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1131,
       "slack_bool": 0,
       "node_name": "n1131"
@@ -2100,8 +2100,8 @@
     "1025": {
       "y_coord": 16.6171617456,
       "x_coord": 51.171266446299995,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1025,
       "slack_bool": 0,
       "node_name": "n1025"
@@ -2118,8 +2118,8 @@
     "1100": {
       "y_coord": 14.2528959976,
       "x_coord": 50.720949794700005,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1100,
       "slack_bool": 0,
       "node_name": "n1100"
@@ -2127,8 +2127,8 @@
     "1092": {
       "y_coord": 18.4407191632,
       "x_coord": 52.32999830035,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1092,
       "slack_bool": 0,
       "node_name": "n1092"
@@ -2145,8 +2145,8 @@
     "1058": {
       "y_coord": 13.52533470535,
       "x_coord": 54.88673801995,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1058,
       "slack_bool": 0,
       "node_name": "n1058"
@@ -2154,8 +2154,8 @@
     "1068": {
       "y_coord": 15.64446499015,
       "x_coord": 54.37126357335,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1068,
       "slack_bool": 0,
       "node_name": "n1068"
@@ -2181,8 +2181,8 @@
     "1136": {
       "y_coord": 11.2189650722,
       "x_coord": 51.4474803875,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1136,
       "slack_bool": 0,
       "node_name": "n1136"
@@ -2199,8 +2199,8 @@
     "1042": {
       "y_coord": 7.01764966335,
       "x_coord": 49.7343697675,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1042,
       "slack_bool": 0,
       "node_name": "n1042"
@@ -2208,8 +2208,8 @@
     "1116": {
       "y_coord": 16.9880778537,
       "x_coord": 51.62793695125,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1116,
       "slack_bool": 0,
       "node_name": "n1116"
@@ -2217,8 +2217,8 @@
     "1104": {
       "y_coord": 18.09794954325,
       "x_coord": 52.3828021306,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1104,
       "slack_bool": 0,
       "node_name": "n1104"
@@ -2244,8 +2244,8 @@
     "1129": {
       "y_coord": 11.9182631823,
       "x_coord": 48.0904267153,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1129,
       "slack_bool": 0,
       "node_name": "n1129"
@@ -2253,8 +2253,8 @@
     "1017": {
       "y_coord": 9.003330197650001,
       "x_coord": 50.4464480789,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1017,
       "slack_bool": 0,
       "node_name": "n1017"
@@ -2271,8 +2271,8 @@
     "1123": {
       "y_coord": 12.0304138847,
       "x_coord": 49.92861749965,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1123,
       "slack_bool": 0,
       "node_name": "n1123"
@@ -2280,8 +2280,8 @@
     "1120": {
       "y_coord": 18.4407191632,
       "x_coord": 52.32999830035,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1120,
       "slack_bool": 0,
       "node_name": "n1120"
@@ -2298,8 +2298,8 @@
     "1006": {
       "y_coord": 11.04423039095,
       "x_coord": 49.9744059247,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1006,
       "slack_bool": 0,
       "node_name": "n1006"
@@ -2307,8 +2307,8 @@
     "1008": {
       "y_coord": 11.16673043555,
       "x_coord": 49.80853874245,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1008,
       "slack_bool": 0,
       "node_name": "n1008"
@@ -2334,8 +2334,8 @@
     "1107": {
       "y_coord": 14.2461680029,
       "x_coord": 49.56499036455,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1107,
       "slack_bool": 0,
       "node_name": "n1107"
@@ -2343,8 +2343,8 @@
     "1095": {
       "y_coord": 14.6954089396,
       "x_coord": 50.9533445307,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1095,
       "slack_bool": 0,
       "node_name": "n1095"
@@ -2361,8 +2361,8 @@
     "1094": {
       "y_coord": 14.749933822500001,
       "x_coord": 51.37692995415,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1094,
       "slack_bool": 0,
       "node_name": "n1094"
@@ -2388,8 +2388,8 @@
     "1088": {
       "y_coord": 16.6541056337,
       "x_coord": 54.3122979199,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1088,
       "slack_bool": 0,
       "node_name": "n1088"
@@ -2397,8 +2397,8 @@
     "1066": {
       "y_coord": 12.2802984556,
       "x_coord": 54.388172666100004,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1066,
       "slack_bool": 0,
       "node_name": "n1066"
@@ -2415,8 +2415,8 @@
     "1037": {
       "y_coord": 16.46634439985,
       "x_coord": 51.90432836485,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1037,
       "slack_bool": 0,
       "node_name": "n1037"
@@ -2424,8 +2424,8 @@
     "1125": {
       "y_coord": 11.9862363715,
       "x_coord": 48.5319452938,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1125,
       "slack_bool": 0,
       "node_name": "n1125"
@@ -2433,8 +2433,8 @@
     "1003": {
       "y_coord": 11.544402677899999,
       "x_coord": 49.680502508100005,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1003,
       "slack_bool": 0,
       "node_name": "n1003"
@@ -2460,8 +2460,8 @@
     "1082": {
       "y_coord": 11.1195410598,
       "x_coord": 51.75964942545,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1082,
       "slack_bool": 0,
       "node_name": "n1082"
@@ -2469,8 +2469,8 @@
     "1020": {
       "y_coord": 9.03292099106,
       "x_coord": 49.84330396565,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1020,
       "slack_bool": 0,
       "node_name": "n1020"
@@ -2478,8 +2478,8 @@
     "1138": {
       "y_coord": 10.8400049133,
       "x_coord": 50.4952491862,
-      "min_pressure": 8.20866755625e11,
-      "max_pressure": 6.5631466755625e13,
+      "min_pressure": 101325.0,
+      "max_pressure": 8.101325e6,
       "node_id": 1138,
       "slack_bool": 0,
       "node_name": "n1138"

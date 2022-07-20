@@ -82,15 +82,15 @@ function generate_steady_sim_inputs_from_gaslib(file::AbstractString,
             x = (nodes[fr_junction]["x_coord"] + nodes[to_junction]["x_coord"]) * 0.5
             y = (nodes[fr_junction]["y_coord"] + nodes[to_junction]["y_coord"]) * 0.5
             p_min = min(nodes[fr_junction]["min_pressure"], nodes[to_junction]["min_pressure"])
-            p_max = min(nodes[fr_junction]["max_pressure"], nodes[to_junction]["max_pressure"])
+            p_max = max(nodes[fr_junction]["max_pressure"], nodes[to_junction]["max_pressure"])
             # add middle node
             network_data["nodes"][new_node_id] = Dict{String,Any}(
                 "node_id" => parse(Int, new_node_id),
                 "node_name" => "n" * new_node_id,
                 "x_coord" =>  x,
                 "y_coord" => y, 
-                "min_pressure" => p_min * data["base_pressure"], 
-                "max_pressure" => p_max * data["base_pressure"],
+                "min_pressure" => p_min, 
+                "max_pressure" => p_max,
                 "slack_bool" => 0
             )
             new_pipe_id = string(1000 + parse(Int, i))
