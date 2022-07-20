@@ -1,4 +1,4 @@
-gnuplot single-pipe.gp 
-
-gnuplot gaslib-boxplots.gp
-gnuplot time-boxplot.gp
+gnuplot single-pipe.gnu
+gnuplot domain.gnu
+gnuplot gaslib-boxplots.gnu
+gnuplot time-boxplot.gnu

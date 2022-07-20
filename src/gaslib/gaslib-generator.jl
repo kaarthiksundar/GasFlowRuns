@@ -13,11 +13,11 @@ get_simulation_params(; T::Float64 = 288.70599999999996) =
 
 function generate_steady_sim_inputs_from_gaslib(file::AbstractString, 
     input_folder::AbstractString, output_folder::AbstractString;
-    compressor_ratio::Float64 = 1.5, control_valve_ratio::Float64 = 1.0)
+    compressor_ratio::Float64 = 1.5, control_valve_ratio::Float64 = 1.0, 
+    compressor_ids::Vector = [], bisect_pipes = false)
 
     data = parse_file(input_folder * file)
 
-    (!isdir(output_folder)) && (mkdir(output_folder)) 
 
     network_data = Dict{String,Any}(
         "nodes" => Dict{String,Any}(), 
@@ -47,7 +47,7 @@ function generate_steady_sim_inputs_from_gaslib(file::AbstractString,
         withdrawal[node] += delivery["withdrawal_nominal"] * data["base_flow"]
     end 
 
-    withdrawal_values = [v for (k, v) in withdrawal]
+    withdrawal_values = [v for (_, v) in withdrawal]
     max_injection = minimum(withdrawal_values)
     nodes_with_max_injection = sort([k for (k,v) in withdrawal if v == max_injection])
     slack_node = nodes_with_max_injection[1]
@@ -73,23 +73,64 @@ function generate_steady_sim_inputs_from_gaslib(file::AbstractString,
     end
 
     for (i, pipe) in data["pipe"]
-        network_data["pipes"][i] = Dict{String,Any}(
-            "pipe_id" => parse(Int, i),
-            "pipe_name" => "p" * i,
-            "from_node" => pipe["fr_junction"],
-            "to_node" => pipe["to_junction"],
-            "diameter" => pipe["diameter"] * data["base_diameter"],
-            "length" => pipe["length"] * data["base_length"],
-            "friction_factor" => pipe["friction_factor"],
-        )
+        if bisect_pipes
+            fr_junction = string(pipe["fr_junction"])
+            to_junction = string(pipe["to_junction"])
+            L = pipe["length"] * 0.5
+            nodes = network_data["nodes"]
+            new_node_id = string(1000 + parse(Int, i))
+            x = (nodes[fr_junction]["x_coord"] + nodes[to_junction]["x_coord"]) * 0.5
+            y = (nodes[fr_junction]["y_coord"] + nodes[to_junction]["y_coord"]) * 0.5
+            p_min = min(nodes[fr_junction]["min_pressure"], nodes[to_junction]["min_pressure"])
+            p_max = min(nodes[fr_junction]["max_pressure"], nodes[to_junction]["max_pressure"])
+            # add middle node
+            network_data["nodes"][new_node_id] = Dict{String,Any}(
+                "node_id" => parse(Int, new_node_id),
+                "node_name" => "n" * new_node_id,
+                "x_coord" =>  x,
+                "y_coord" => y, 
+                "min_pressure" => p_min * data["base_pressure"], 
+                "max_pressure" => p_max * data["base_pressure"],
+                "slack_bool" => 0
+            )
+            new_pipe_id = string(1000 + parse(Int, i))
+            network_data["pipes"][i] = Dict{String,Any}(
+                "pipe_id" => parse(Int, i),
+                "pipe_name" => "p" * i,
+                "from_node" => pipe["fr_junction"],
+                "to_node" => parse(Int, new_node_id),
+                "diameter" => pipe["diameter"] * data["base_diameter"],
+                "length" => L * data["base_length"],
+                "friction_factor" => pipe["friction_factor"],
+            )
+            network_data["pipes"][new_pipe_id] = Dict{String,Any}(
+                "pipe_id" => parse(Int, new_pipe_id),
+                "pipe_name" => "p" * new_pipe_id,
+                "from_node" => parse(Int, new_node_id),
+                "to_node" => pipe["to_junction"],
+                "diameter" => pipe["diameter"] * data["base_diameter"],
+                "length" => L * data["base_length"],
+                "friction_factor" => pipe["friction_factor"],
+            )
+        else 
+            network_data["pipes"][i] = Dict{String,Any}(
+                "pipe_id" => parse(Int, i),
+                "pipe_name" => "p" * i,
+                "from_node" => pipe["fr_junction"],
+                "to_node" => pipe["to_junction"],
+                "diameter" => pipe["diameter"] * data["base_diameter"],
+                "length" => pipe["length"] * data["base_length"],
+                "friction_factor" => pipe["friction_factor"],
+            )
+        end 
     end 
 
     for (i, compressor) in data["compressor"]
         network_data["compressors"][i] = Dict{String,Any}(
             "comp_id" => parse(Int, i),
             "comp_name" => "c" * i,
-            "from_node" => compressor["fr_junction"],
-            "to_node" => compressor["to_junction"]
+            "from_node" => (parse(Int, i) in compressor_ids) ? compressor["to_junction"] : compressor["fr_junction"],
+            "to_node" => (parse(Int, i) in compressor_ids) ? compressor["fr_junction"] : compressor["to_junction"]
         )
         bc["boundary_compressor"][i] = Dict{String,Any}(
             "control_type" => 0, "value" => compressor_ratio
@@ -157,6 +198,12 @@ function generate_steady_sim_inputs_from_gaslib(file::AbstractString,
         )
     end 
 
+    if bisect_pipes 
+        output_folder = "./data/Gaslib-" * string(length(network_data["nodes"])) * "/"
+    end 
+
+    (!isdir(output_folder)) && (mkdir(output_folder))  
+    
     open(output_folder * "params.json", "w") do f 
         JSON.print(f, Dict("simulation_params" => get_simulation_params()), 2)
     end
@@ -171,13 +218,22 @@ function generate_steady_sim_inputs_from_gaslib(file::AbstractString,
 
 end 
 
-generate_steady_sim_inputs_from_gaslib("GasLib-11.zip", 
-    "./data/GasLib-benchmarks/", "./data/GasLib-11/")
-generate_steady_sim_inputs_from_gaslib("GasLib-24.zip", 
-    "./data/GasLib-benchmarks/", "./data/GasLib-24/")
-generate_steady_sim_inputs_from_gaslib("GasLib-40.zip", 
-    "./data/GasLib-benchmarks/", "./data/GasLib-40/")
-generate_steady_sim_inputs_from_gaslib("GasLib-134.zip", 
-    "./data/GasLib-benchmarks/", "./data/GasLib-134/")
+# generate_steady_sim_inputs_from_gaslib("GasLib-11.zip", 
+#     "./data/GasLib-benchmarks/", "./data/GasLib-11/")
+# generate_steady_sim_inputs_from_gaslib("GasLib-24.zip", 
+#     "./data/GasLib-benchmarks/", "./data/GasLib-24/")
+# generate_steady_sim_inputs_from_gaslib("GasLib-40.zip", 
+#     "./data/GasLib-benchmarks/", "./data/GasLib-40/")
+# generate_steady_sim_inputs_from_gaslib("GasLib-134.zip", 
+#     "./data/GasLib-benchmarks/", "./data/GasLib-134/")
+# generate_steady_sim_inputs_from_gaslib("GasLib-135.zip", 
+#     "./data/GasLib-benchmarks/", "./data/GasLib-135/";
+#     compressor_ids = [24, 23, 3, 2, 21])
 generate_steady_sim_inputs_from_gaslib("GasLib-135.zip", 
-    "./data/GasLib-benchmarks/", "./data/GasLib-135/")
+    "./data/GasLib-benchmarks/", "./data/GasLib-135/";
+    compressor_ids = [24, 23, 3, 2, 21], 
+    compressor_ratio = 1.5, bisect_pipes = true)
+# generate_steady_sim_inputs_from_gaslib("GasLib-582.zip", 
+#     "./data/GasLib-benchmarks/", "./data/GasLib-582/")
+# generate_steady_sim_inputs_from_gaslib("GasLib-4197.zip", 
+#     "./data/GasLib-benchmarks/", "./data/GasLib-4197/")
