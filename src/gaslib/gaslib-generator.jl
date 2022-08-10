@@ -229,11 +229,15 @@ end
 # generate_steady_sim_inputs_from_gaslib("GasLib-135.zip", 
 #     "./data/GasLib-benchmarks/", "./data/GasLib-135/";
 #     compressor_ids = [24, 23, 3, 2, 21])
-generate_steady_sim_inputs_from_gaslib("GasLib-135.zip", 
-    "./data/GasLib-benchmarks/", "./data/GasLib-135/";
-    compressor_ids = [24, 23, 3, 2, 21], 
-    compressor_ratio = 1.5, bisect_pipes = true)
+# generate_steady_sim_inputs_from_gaslib("GasLib-135.zip", 
+#     "./data/GasLib-benchmarks/", "./data/GasLib-135/";
+#     compressor_ids = [24, 23, 3, 2, 21], 
+#     compressor_ratio = 1.5, bisect_pipes = true)
 # generate_steady_sim_inputs_from_gaslib("GasLib-582.zip", 
 #     "./data/GasLib-benchmarks/", "./data/GasLib-582/")
 # generate_steady_sim_inputs_from_gaslib("GasLib-4197.zip", 
 #     "./data/GasLib-benchmarks/", "./data/GasLib-4197/")
+# generate_steady_sim_inputs_from_gaslib("GasLib-135.zip", 
+#     "./data/GasLib-benchmarks/", "./data/GasLib-135/")
+# generate_steady_sim_inputs_from_gaslib("GasLib-582.zip", 
+#     "./data/GasLib-benchmarks/", "./data/GasLib-582/")
