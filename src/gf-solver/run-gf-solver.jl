@@ -12,6 +12,7 @@ end
 
 function perturb_compressor_ratios!(data::Dict{String,Any}, lb::Float64, ub::Float64)
     for (_, compressor) in get(data, "boundary_compressor", [])
+        (compressor["value"] == 1.0) && (continue)
         compressor["value"] = (lb == ub) ? lb : rand(Uniform(lb, ub))   #1.1, 1.4
     end 
 end 
@@ -99,7 +100,7 @@ function get_max_deviation(ideal, cnga)
     return p_deviation, rho_deviation
 end 
 
-function ideal_vs_non_ideal_runs(;cases = ["GasLib-11", "GasLib-24", "GasLib-40", "GasLib-134", "GasLib-276"],
+function ideal_vs_non_ideal_runs(;cases = ["GasLib-11", "GasLib-24", "GasLib-40", "GasLib-134", "GasLib-582"],
     lb_alpha::Float64=1.1, 
     ub_alpha::Float64=1.4, 
     lb_injection::Float64 = 0.75, 

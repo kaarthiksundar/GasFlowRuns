@@ -26,8 +26,8 @@ set logscale y
 set format y '$10^{%L}$'
 set key spacing 1.5
 set ylabel 'time (sec.)'
-set xrange [1.0:12.0]
-set xtics   ('11' 2.0, '24' 5.0, '40' 8.0, '134' 11.0)
+set xrange [1.0:15.0]
+set xtics   ('11' 2.0, '24' 5.0, '40' 8.0, '134' 11.0, '582' 14.0)
 set xlabel 'GasLib network'
 set output output
 plot '../../output/GasLib-11-ideal.csv' using (1.5):6 ls 2 title 'ideal', \
@@ -37,4 +37,6 @@ plot '../../output/GasLib-11-ideal.csv' using (1.5):6 ls 2 title 'ideal', \
 '../../output/GasLib-40-ideal.csv' using (7.5):6 ls 2 notitle, \
 '../../output/GasLib-40-cnga.csv' using (8.5):6 ls 3 notitle, \
 '../../output/GasLib-134-ideal.csv' using (10.5):6 ls 2 notitle, \
-'../../output/GasLib-134-cnga.csv' using (11.5):6 ls 3 notitle
+'../../output/GasLib-134-cnga.csv' using (11.5):6 ls 3 notitle, \
+'../../output/GasLib-582-ideal.csv' using (13.5):6 ls 2 notitle, \
+'../../output/GasLib-582-cnga.csv' using (14.5):6 ls 3 notitle

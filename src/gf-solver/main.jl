@@ -4,11 +4,11 @@ using Logging
 
 logger = ConsoleLogger(stdout, Logging.Error)
 
-function run_dim_vs_nondim_study(; cases = ["GasLib-11", "GasLib-24", "GasLib-40", "GasLib-134", "GasLib-276"],
+function run_dim_vs_nondim_study(; cases = ["GasLib-11", "GasLib-24", "GasLib-40", "GasLib-134", "GasLib-582"],
     lb_alpha::Float64=1.1, 
     ub_alpha::Float64=1.4, 
-    lb_injection::Float64 = 0.75, 
-    ub_injection::Float64 = 1.25)
+    lb_injection::Float64 = 0.9, 
+    ub_injection::Float64 = 1.1)
     eos_list = [:ideal, :full_cnga]
 
     output_folder = "./output/"
@@ -43,7 +43,7 @@ function run_kekatos_comparison_study(;
     ub_alpha::Float64 = 1.4, 
     lb_injection::Float64 = 0.75, 
     ub_injection::Float64 = 1.25,
-    cases = ["GasLib-11", "GasLib-24", "GasLib-40", "GasLib-134", "GasLib-276"])
+    cases = ["GasLib-11", "GasLib-24", "GasLib-40", "GasLib-134", "GasLib-582"])
 
     eos_list = [:ideal, :full_cnga]
     output_folder = "./output/comparison-study/"

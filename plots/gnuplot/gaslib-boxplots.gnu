@@ -28,7 +28,7 @@ set yrange [0:4.5]
 set ytics 0, 1.0, 4.0
 set ylabel 'max. nodal pressure deviation (\%)'
 set xrange [1.0:11.0]
-set xtics   ('11' 2.0, '24' 4.0, '40' 6.0, '134' 8.0, '276' 10.0)
+set xtics   ('11' 2.0, '24' 4.0, '40' 6.0, '134' 8.0, '582' 10.0)
 set xlabel 'GasLib network'
 set output output
 plot '../../output/ideal_vs_nonideal_max_deviation_pressure.csv' using (2):1 ls 2 notitle, \
@@ -65,11 +65,11 @@ set style line 3 lc rgb '#7e2f8e' lt 1 lw 2
 set key bottom right
 set key spacing 1.5
 unset key
-set yrange [9:42]
+set yrange [9:25]
 set ytics 10, 5.0, 40.0
 set ylabel 'max. nodal density deviation (\%)'
 set xrange [1.0:11.0]
-set xtics   ('11' 2.0, '24' 4.0, '40' 6.0, '134' 8.0, '276' 10.0)
+set xtics   ('11' 2.0, '24' 4.0, '40' 6.0, '134' 8.0, '582' 10.0)
 set xlabel 'GasLib network'
 set output output
 plot '../../output/ideal_vs_nonideal_max_deviation_density.csv' using (2):1 ls 2 notitle, \
