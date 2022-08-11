@@ -1,5 +1,5 @@
 # GasFlowRuns
-Steady State Gas Flow Solver runs for final manuscript 
+Steady State Gas Flow Solver runs for manuscript "Numerical Solution of the Steady-State Network Flow Equations for a Non-Ideal Gas" in https://arxiv.org/abs/2204.00071
 
 The actual runs are in the src/gf-solver folder written in Julia
 
