@@ -3,7 +3,7 @@ import csv
 import math
 
 eos = ['ideal', 'cnga']
-instances = ['GasLib-11', 'GasLib-24', 'GasLib-40', 'GasLib-134']
+instances = ['GasLib-11', 'GasLib-24', 'GasLib-40', 'GasLib-134', 'GasLib-582']
 output_path = '../output/'
 
 get_feasible_count = lambda file: pd.read_csv(file)['feasibility'].sum()

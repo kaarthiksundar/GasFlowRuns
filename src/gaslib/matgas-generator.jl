@@ -88,8 +88,8 @@ function generate_steady_sim_inputs_from_matgas(file::AbstractString,
 
     for (i, node) in data["junction"]
         network_data["nodes"][i] = Dict{String,Any}(
-            "node_id" => parse(Int, i),
-            "node_name" => "n" * i,
+            "id" => parse(Int, i),
+            "name" => "n" * i,
             "x_coord" => node["lat"],
             "y_coord" => node["lon"], 
             "min_pressure" => node["p_min"] * data["base_pressure"], 
@@ -108,9 +108,9 @@ function generate_steady_sim_inputs_from_matgas(file::AbstractString,
 
     for (i, pipe) in data["pipe"]
         network_data["pipes"][i] = Dict{String,Any}(
-            "pipe_id" => parse(Int, i),
-            "pipe_name" => "p" * i,
-            "from_node" => pipe["fr_junction"],
+            "id" => parse(Int, i),
+            "name" => "p" * i,
+            "fr_node" => pipe["fr_junction"],
             "to_node" => pipe["to_junction"],
             "diameter" => pipe["diameter"] * data["base_diameter"],
             "length" => pipe["length"] * data["base_length"],
@@ -120,9 +120,9 @@ function generate_steady_sim_inputs_from_matgas(file::AbstractString,
 
     for (i, compressor) in data["compressor"]
         network_data["compressors"][i] = Dict{String,Any}(
-            "comp_id" => parse(Int, i),
-            "comp_name" => "c" * i,
-            "from_node" => compressor["fr_junction"],
+            "id" => parse(Int, i),
+            "name" => "c" * i,
+            "fr_node" => compressor["fr_junction"],
             "to_node" => compressor["to_junction"]
         )
         bc["boundary_compressor"][i] = Dict{String,Any}(
@@ -134,9 +134,9 @@ function generate_steady_sim_inputs_from_matgas(file::AbstractString,
     bc["boundary_control_valve"] = Dict{String,Any}("on" => [], "off" => [])
     for (i, cv) in get(data, "regulator", [])
         network_data["control_valves"][i] = Dict{String,Any}(
-        "control_valve_id" => parse(Int, i),
-        "control_valve_name" => "cv" * i,
-        "from_node" => cv["fr_junction"],
+        "id" => parse(Int, i),
+        "name" => "cv" * i,
+        "fr_node" => cv["fr_junction"],
         "to_node" => cv["to_junction"],
         "bypass_required" => cv["bypass_required"]
         )
@@ -150,9 +150,9 @@ function generate_steady_sim_inputs_from_matgas(file::AbstractString,
     bc["boundary_valve"] = Dict{String,Any}("on" => [], "off" => [])
     for (i, v) in get(data, "valve", []) 
         network_data["valves"][i] = Dict{String,Any}(
-            "valve_id" => parse(Int, i),
-            "valve_name" => "v" * i,
-            "from_node" => v["fr_junction"],
+            "id" => parse(Int, i),
+            "name" => "v" * i,
+            "fr_node" => v["fr_junction"],
             "to_node" => v["to_junction"]
         )
         push!(bc["boundary_valve"]["on"], parse(Int, i))
@@ -163,9 +163,9 @@ function generate_steady_sim_inputs_from_matgas(file::AbstractString,
     network_data["short_pipes"] = Dict{String,Any}()
     for (i, res) in get(data, "resistor", [])
         network_data["resistors"][i] = Dict{String,Any}(
-            "resistor_id" => parse(Int, i),
-            "resistor_name" => "r" * i, 
-            "from_node" => res["fr_junction"], 
+            "id" => parse(Int, i),
+            "name" => "r" * i, 
+            "fr_node" => res["fr_junction"], 
             "to_node" => res["to_junction"], 
             "drag" => res["drag"], 
             "diameter" => res["diameter"]
@@ -174,9 +174,9 @@ function generate_steady_sim_inputs_from_matgas(file::AbstractString,
 
     for (i, res) in get(data, "loss_resistor", [])
         network_data["loss_resistors"][i] = Dict{String,Any}(
-            "loss_resistor_id" => parse(Int, i),
-            "loss_resistor_name" => "lr" * i, 
-            "from_node" => res["fr_junction"], 
+            "id" => parse(Int, i),
+            "name" => "lr" * i, 
+            "fr_node" => res["fr_junction"], 
             "to_node" => res["to_junction"], 
             "p_loss" => res["p_loss"] * data["base_pressure"]
         )
@@ -184,9 +184,9 @@ function generate_steady_sim_inputs_from_matgas(file::AbstractString,
 
     for (i, pipe) in get(data, "short_pipe", [])
         network_data["short_pipes"][i] = Dict{String,Any}(
-            "short_pipe_id" => parse(Int, i),
-            "short_pipe_name" => "sp" * i,
-            "from_node" => pipe["fr_junction"],
+            "id" => parse(Int, i),
+            "name" => "sp" * i,
+            "fr_node" => pipe["fr_junction"],
             "to_node" => pipe["to_junction"]
         )
     end 

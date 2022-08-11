@@ -1,0 +1,8 @@
+{
+    "boundary_nonslack_flow": {
+        "2": 275.0
+    },
+    "boundary_pslack": {
+        "1": 4.336678212541887e6
+    }
+}
