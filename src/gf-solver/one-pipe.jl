@@ -8,7 +8,7 @@ function get_pressure(x; eos=:ideal)
     data = GasSteadySim._parse_data("./data/2-node/")
     data["pipes"]["1"]["length"] = x 
     ss = initialize_simulator(data, eos=eos)
-    run_simulator!(ss)
+    run_simulator!(ss; iteration_limit=50)
     p_fr = control(ss, :node, 1)[2]
     slack_pressure = p_fr * nominal_values(ss, :pressure) * 1e-6
     return slack_pressure, ss.sol["nodal_pressure"][2] * 1e-6
@@ -18,7 +18,7 @@ function get_density(x; eos=:ideal)
     data = GasSteadySim._parse_data("./data/2-node/")
     data["pipes"]["1"]["length"] = x 
     ss = initialize_simulator(data, eos=eos)
-    run_simulator!(ss)
+    run_simulator!(ss; iteration_limit=50)
     p_fr = control(ss, :node, 1)[2] 
     rho_fr = (eos == :ideal) ? GasSteadySim._pressure_to_density_ideal(p_fr, ss.nominal_values, ss.params) :
         GasSteadySim._pressure_to_density_full_cnga(p_fr, ss.nominal_values, ss.params)
@@ -35,7 +35,7 @@ function write_csv(results::Dict{Symbol,Any}, output_path, lengths)
     to_write = Array{Any,2}(undef, length(lengths)+1, 3)
     x = [0.0]
     append!(x, lengths)
-    for i in 1:length(x)
+    for i in eachindex(x)
         d = x[i]/1000.0
         to_write[i, :] = [d, results[:ideal][i], results[:full_cnga][i]]
     end 

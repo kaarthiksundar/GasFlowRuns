@@ -25,10 +25,10 @@ function perturb_injections!(data::Dict{String,Any}, lb::Float64, ub::Float64)
 end 
 
 function make_nominal_values_unity!(data::Dict{String,Any})
-    data["simulation_params"]["nominal_length"] = 1.0 
-    data["simulation_params"]["nominal_velocity"] = 1.0  
-    data["simulation_params"]["nominal_pressure"] = 1.0 
-    data["simulation_params"]["nominal_density"] = 1.0 
+    data["params"]["nominal_length"] = 1.0 
+    data["params"]["nominal_velocity"] = 1.0  
+    data["params"]["nominal_pressure"] = 1.0 
+    data["params"]["nominal_density"] = 1.0 
 end 
 
 function write_results(results::Dict{Int,Any}, num_runs, output_path)
@@ -61,17 +61,18 @@ function paper_runs(folder::AbstractString, eos::Symbol;
     dimensional = false) 
     data_sample = GasSteadySim._parse_data(folder)
     # julia compiling run 
-    solver_return = run_gf_solver(data_sample, eos, method = :newton, show_trace = true)
+    solver_return = run_gf_solver(data_sample, eos, method = :newton, show_trace = true, iteration_limit=50)
     Random.seed!(2022)
     results = Dict{Int,Any}()
 
     for i in 1:num_runs
+        @show case_name, i
         results[i] = Dict{String,Any}()
         data = GasSteadySim._parse_data(folder)
         (dimensional == true) && (make_nominal_values_unity!(data))
         perturb_compressor_ratios!(data, lb_alpha, ub_alpha)
         perturb_injections!(data, lb_injection, ub_injection)
-        solver_return = run_gf_solver(data, eos, method = :newton, show_trace = false)
+        solver_return = run_gf_solver(data, eos, method = :newton, show_trace = false, iteration_limit=50)
         results[i]["solver_status"] = Int(solver_return.status)
         results[i]["num_iterations"] = solver_return.iterations
         results[i]["time"] = solver_return.time 
@@ -101,10 +102,10 @@ function get_max_deviation(ideal, cnga)
 end 
 
 function ideal_vs_non_ideal_runs(;cases = ["GasLib-11", "GasLib-24", "GasLib-40", "GasLib-134", "GasLib-582"],
-    lb_alpha::Float64=1.1, 
-    ub_alpha::Float64=1.4, 
-    lb_injection::Float64 = 0.75, 
-    ub_injection::Float64 = 1.25)
+    lb_alpha::Float64=1.35, 
+    ub_alpha::Float64=1.70, 
+    lb_injection::Float64 = 1.0, 
+    ub_injection::Float64 = 1.0)
     output_file_p = "./output/ideal_vs_nonideal_max_deviation_pressure.csv"
     output_file_rho = "./output/ideal_vs_nonideal_max_deviation_density.csv"
     data_folder = "./data/"
@@ -118,15 +119,16 @@ function ideal_vs_non_ideal_runs(;cases = ["GasLib-11", "GasLib-24", "GasLib-40"
     results_rho = Dict{String,Any}(case => [] for case in cases)
     
     for case in cases
-        for _ in 1:num_runs 
+        for i in 1:num_runs 
+            @show data_folder * case, i
             data_i = GasSteadySim._parse_data(data_folder * case * "/")
             perturb_compressor_ratios!(data_i, lb_alpha, ub_alpha)
             perturb_injections!(data_i, lb_injection, ub_injection)
             data_n = deepcopy(data_i)
             ss_i = initialize_simulator(data_i, eos=:ideal)
             ss_n = initialize_simulator(data_n, eos=:full_cnga)
-            _ = run_simulator!(ss_i)
-            _ = run_simulator!(ss_n)
+            _ = run_simulator!(ss_i, method = :newton)
+            _ = run_simulator!(ss_n, method = :newton)
             deviation_p, deviation_rho = get_max_deviation(ss_i, ss_n)
             push!(results_p[case], deviation_p)
             push!(results_rho[case], deviation_rho)
