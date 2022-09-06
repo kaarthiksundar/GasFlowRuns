@@ -52,8 +52,8 @@ end
 
 
 function paper_runs(folder::AbstractString, eos::Symbol; 
-    lb_alpha::Float64=1.1, 
-    ub_alpha::Float64=1.4, 
+    lb_alpha::Float64=1.5, 
+    ub_alpha::Float64=1.5, 
     lb_injection::Float64 = 0.75, 
     ub_injection::Float64 = 1.25, 
     num_runs = 500, 
@@ -66,13 +66,14 @@ function paper_runs(folder::AbstractString, eos::Symbol;
     results = Dict{Int,Any}()
 
     for i in 1:num_runs
-        @show case_name, i
+        @show case_name, i, eos
         results[i] = Dict{String,Any}()
         data = GasSteadySim._parse_data(folder)
         (dimensional == true) && (make_nominal_values_unity!(data))
         perturb_compressor_ratios!(data, lb_alpha, ub_alpha)
         perturb_injections!(data, lb_injection, ub_injection)
-        solver_return = run_gf_solver(data, eos, method = :newton, show_trace = false, iteration_limit=50)
+        solver_return = run_gf_solver(data, eos, method = :newton, show_trace = false, iteration_limit=100)
+        @show solver_return.status
         results[i]["solver_status"] = Int(solver_return.status)
         results[i]["num_iterations"] = solver_return.iterations
         results[i]["time"] = solver_return.time 
@@ -102,10 +103,10 @@ function get_max_deviation(ideal, cnga)
 end 
 
 function ideal_vs_non_ideal_runs(;cases = ["GasLib-11", "GasLib-24", "GasLib-40", "GasLib-134", "GasLib-582"],
-    lb_alpha::Float64=1.35, 
-    ub_alpha::Float64=1.70, 
-    lb_injection::Float64 = 1.0, 
-    ub_injection::Float64 = 1.0)
+    lb_alpha::Float64=1.5, 
+    ub_alpha::Float64=1.5, 
+    lb_injection::Float64 = 0.75, 
+    ub_injection::Float64 = 1.25)
     output_file_p = "./output/ideal_vs_nonideal_max_deviation_pressure.csv"
     output_file_rho = "./output/ideal_vs_nonideal_max_deviation_density.csv"
     data_folder = "./data/"
@@ -127,8 +128,9 @@ function ideal_vs_non_ideal_runs(;cases = ["GasLib-11", "GasLib-24", "GasLib-40"
             data_n = deepcopy(data_i)
             ss_i = initialize_simulator(data_i, eos=:ideal)
             ss_n = initialize_simulator(data_n, eos=:full_cnga)
-            _ = run_simulator!(ss_i, method = :newton)
-            _ = run_simulator!(ss_n, method = :newton)
+            ret_i = run_simulator!(ss_i, method = :newton)
+            ret_n = run_simulator!(ss_n, method = :newton)
+            @show ret_i.status, ret_n.status
             deviation_p, deviation_rho = get_max_deviation(ss_i, ss_n)
             push!(results_p[case], deviation_p)
             push!(results_rho[case], deviation_rho)
